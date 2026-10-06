@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bashubb.com/wipe/sitemap.xml
