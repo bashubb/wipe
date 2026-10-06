@@ -27,7 +27,7 @@
   "applicationCategory": "PhotographyApplication",
   "description": "Removes location and other metadata from iPhone photos, videos and Live Photos on the device, without losing quality.",
   "url": "https://bashubb.com/wipe/",
-  "publisher": {"@type": "Organization", "name": "Bashubb", "url": "https://bashubb.com/"}
+  "publisher": {"@type": "Organization", "name": "bashubb", "url": "https://bashubb.com/"}
 }
 </script>
 </head>
@@ -44,6 +44,9 @@
   <symbol id="i-noacc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6M3 3l18 18"/></symbol>
   <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></symbol>
   <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="13" height="13" rx="3"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+  <symbol id="i-share-air" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5.6 16.4a8 8 0 1 1 12.8 0M8.5 13.8a4 4 0 1 1 7 0"/><path d="M12 13v8"/></symbol>
+  <symbol id="i-bubble" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4C6.5 4 3 7.4 3 11.2c0 2.2 1.2 4.2 3.2 5.5L5.5 20l3.6-2c.9.2 1.9.4 2.9.4 5.5 0 9-3.4 9-7.2S17.5 4 12 4z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
 </svg>
 
 <a class="skip" href="#main">Skip to content</a>
@@ -75,29 +78,25 @@
       </ul>
     </div>
 
-    <div class="stage" role="img" aria-label="A photo shedding its location, date, phone model and author details, leaving a clean copy">
-      <div class="photo" aria-hidden="true">
-        <div class="sun"></div>
-        <div class="ridge back"></div>
-        <div class="ridge"></div>
-        <div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div>
-        <div class="lake"></div>
-      </div>
-      <span class="chip c1" aria-hidden="true"><svg><use href="#i-pin"/></svg>50.0614° N, 19.9383° E</span>
-      <span class="chip c2" aria-hidden="true"><svg><use href="#i-clock"/></svg>May 12, 2024 · 10:32</span>
-      <span class="chip c3" aria-hidden="true"><svg><use href="#i-phone"/></svg>iPhone 15 Pro · 48 MP</span>
-      <span class="chip c4" aria-hidden="true"><svg><use href="#i-user"/></svg>Jane Doe</span>
-      <span class="dust" style="top:9%;left:18%;--dx:-14px;--dy:-60px" aria-hidden="true"></span>
-      <span class="dust" style="top:11%;left:34%;--dx:10px;--dy:-70px;animation-delay:.1s" aria-hidden="true"></span>
-      <span class="dust" style="top:8%;left:46%;--dx:22px;--dy:-52px;animation-delay:.2s" aria-hidden="true"></span>
-      <span class="dust" style="top:29%;right:10%;--dx:24px;--dy:-58px;animation-delay:.3s" aria-hidden="true"></span>
-      <span class="dust" style="top:31%;right:26%;--dx:-8px;--dy:-66px;animation-delay:.35s" aria-hidden="true"></span>
-      <span class="dust" style="top:27%;right:38%;--dx:6px;--dy:-48px;animation-delay:.45s" aria-hidden="true"></span>
-      <span class="dust" style="bottom:25%;left:6%;--dx:-20px;--dy:-62px;animation-delay:.55s" aria-hidden="true"></span>
-      <span class="dust" style="bottom:27%;left:20%;--dx:8px;--dy:-72px;animation-delay:.6s" aria-hidden="true"></span>
-      <span class="dust" style="bottom:23%;left:30%;--dx:16px;--dy:-54px;animation-delay:.7s" aria-hidden="true"></span>
-      <span class="dust" style="bottom:9%;right:14%;--dx:18px;--dy:-60px;animation-delay:.8s" aria-hidden="true"></span>
-      <span class="dust" style="bottom:7%;right:28%;--dx:-12px;--dy:-68px;animation-delay:.85s" aria-hidden="true"></span>
+    <div class="stage deck" role="img" aria-label="Shared moments — a beach selfie, a dog in the park, a birthday cake — each losing its location, time and device details and becoming a clean copy">
+      <div class="deck-card" data-pos="0"><img src="assets/moments/beach.svg" alt="" width="300" height="400"></div>
+      <div class="deck-card" data-pos="1"><img src="assets/moments/dog.svg" alt="" width="300" height="400"></div>
+      <div class="deck-card" data-pos="2"><img src="assets/moments/cake.svg" alt="" width="300" height="400"></div>
+      <div class="deck-card" data-pos="3"><img src="assets/moments/coffee.svg" alt="" width="300" height="400"></div>
+      <div class="deck-card" data-pos="4"><img src="assets/moments/camp.svg" alt="" width="300" height="400"></div>
+      <div class="deck-card" data-pos="5"><img src="assets/moments/city.svg" alt="" width="300" height="400"></div>
+      <span class="chip c1" aria-hidden="true"><svg><use href="#i-pin"/></svg><span></span></span>
+      <span class="chip c2" aria-hidden="true"><svg><use href="#i-clock"/></svg><span></span></span>
+      <span class="chip c3" aria-hidden="true"><svg><use href="#i-phone"/></svg><span></span></span>
+      <span class="dust" style="top:10%;left:14%;--dx:-14px;--dy:-60px;animation-delay:0s" aria-hidden="true"></span>
+      <span class="dust" style="top:12%;left:30%;--dx:10px;--dy:-70px;animation-delay:0.05s" aria-hidden="true"></span>
+      <span class="dust" style="top:9%;left:44%;--dx:22px;--dy:-52px;animation-delay:0.1s" aria-hidden="true"></span>
+      <span class="dust" style="top:34%;left:72%;--dx:24px;--dy:-58px;animation-delay:0.12s" aria-hidden="true"></span>
+      <span class="dust" style="top:36%;left:62%;--dx:-8px;--dy:-66px;animation-delay:0.16s" aria-hidden="true"></span>
+      <span class="dust" style="top:32%;left:80%;--dx:6px;--dy:-48px;animation-delay:0.2s" aria-hidden="true"></span>
+      <span class="dust" style="top:74%;left:8%;--dx:-20px;--dy:-62px;animation-delay:0.22s" aria-hidden="true"></span>
+      <span class="dust" style="top:76%;left:20%;--dx:8px;--dy:-72px;animation-delay:0.26s" aria-hidden="true"></span>
+      <span class="dust" style="top:72%;left:30%;--dx:16px;--dy:-54px;animation-delay:0.3s" aria-hidden="true"></span>
       <span class="clean-badge" aria-hidden="true"><svg width="18" height="18"><use href="#i-check"/></svg>Clean copy</span>
     </div>
   </div>
@@ -118,7 +117,25 @@
         <div class="reveal-item"><span class="label"><svg><use href="#i-text"/></svg>Captions &amp; keywords</span><p>Descriptions and tags you may have forgotten.</p></div>
       </div>
     </div>
-    <div class="phone"><img src="assets/screens/location.jpg" alt="Wipe showing the exact coordinates found in a video, with a note on why location should be removed" width="506" height="1100" loading="lazy"></div>
+    <div class="inspector" id="inspector" data-state="original">
+      <div class="insp-head">
+        <div class="thumb scene" aria-hidden="true"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div>
+        <div><strong>IMG_4821.HEIC</strong><span class="insp-sub">Photo · 12 MP</span></div>
+      </div>
+      <div class="seg" role="group" aria-label="Show metadata of">
+        <button type="button" data-show="original" aria-pressed="true">Original</button>
+        <button type="button" data-show="clean" aria-pressed="false">Clean copy</button>
+      </div>
+      <ul class="fields">
+        <li class="rm" style="--i:0"><svg><use href="#i-pin"/></svg><span class="k">Location</span><span class="v">50.0614° N, 19.9383° E</span><span class="gone">Removed</span></li>
+        <li class="rm" style="--i:1"><svg><use href="#i-clock"/></svg><span class="k">Captured</span><span class="v">May 12, 2024 · 10:32</span><span class="gone">Removed</span></li>
+        <li class="rm" style="--i:2"><svg><use href="#i-phone"/></svg><span class="k">Device</span><span class="v">iPhone 15 Pro · 24 mm</span><span class="gone">Removed</span></li>
+        <li class="rm" style="--i:3"><svg><use href="#i-user"/></svg><span class="k">Author</span><span class="v">Jane Doe</span><span class="gone">Removed</span></li>
+        <li class="rm" style="--i:4"><svg><use href="#i-wand"/></svg><span class="k">Edited with</span><span class="v">Photo editor 9.2</span><span class="gone">Removed</span></li>
+        <li class="keep" style="--i:5"><svg><use href="#i-check"/></svg><span class="k">Camera</span><span class="v">1/120 s · ƒ1.8 · ISO 100</span><span class="gone">Kept</span></li>
+      </ul>
+      <div class="insp-foot"><span class="when-original">5 details can identify you</span><span class="when-clean"><svg width="16" height="16"><use href="#i-check"/></svg>Safe to Share · quality preserved</span></div>
+    </div>
   </div>
 </section>
 
@@ -129,16 +146,29 @@
     <p class="lead">Pick photos, videos or Live Photos, see what each one reveals, and get verified clean copies in seconds.</p>
     <div class="phones">
       <figure>
-        <div class="phone"><img src="assets/screens/customize.jpg" alt="Wipe listing location, capture time, device and author details found in six items" width="506" height="1100" loading="lazy"></div>
-        <figcaption><span class="step">1</span><h3>See what’s inside</h3><p>Every item is scanned on your iPhone. Tap any category to see the exact values.</p></figcaption>
+        <div class="picto" aria-hidden="true">
+          <div class="scene"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div>
+          <span class="tagchip" style="top:14%;left:9%"><svg><use href="#i-pin"/></svg>Location</span>
+          <span class="tagchip" style="top:34%;right:7%"><svg><use href="#i-clock"/></svg>May 12</span>
+          <span class="tagchip" style="bottom:12%;left:12%"><svg><use href="#i-phone"/></svg>iPhone</span>
+          <span class="lens"></span>
+        </div>
+        <figcaption><span class="step">1</span><h3>See what’s inside</h3><p>Pick photos, videos or Live Photos. Wipe scans them on your iPhone and shows every detail it found.</p></figcaption>
       </figure>
       <figure>
-        <div class="phone"><img src="assets/screens/cleaning.jpg" alt="Wipe cleaning copies while preserving quality, with each copy verified" width="506" height="1100" loading="lazy"></div>
+        <div class="picto" aria-hidden="true">
+          <span class="ring"></span>
+          <div class="scene" style="width:42%"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div>
+        </div>
         <figcaption><span class="step">2</span><h3>Clean and verify</h3><p>Wipe removes what you chose, then re-checks every copy before you can share it.</p></figcaption>
       </figure>
       <figure>
-        <div class="phone"><img src="assets/screens/ready.jpg" alt="Six clean copies ready to share, with location, capture time, device and author details removed and quality preserved" width="506" height="1100" loading="lazy"></div>
-        <figcaption><span class="step">3</span><h3>Share with confidence</h3><p>Send them anywhere, save them to Photos or Files. Your originals stay as they were.</p></figcaption>
+        <div class="picto" aria-hidden="true">
+          <div class="scene"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div>
+          <span class="ok"><svg><use href="#i-check"/></svg></span>
+          <span class="send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg></span>
+        </div>
+        <figcaption><span class="step">3</span><h3>Share with confidence</h3><p>Send them anywhere, save them to Photos or Files. Your originals stay exactly as they were.</p></figcaption>
       </figure>
     </div>
   </div>
@@ -201,7 +231,20 @@
 
 <section class="alt" id="share">
   <div class="wrap split">
-    <div class="phone"><img src="assets/screens/onboarding.jpg" alt="Wipe onboarding: author name, exact location, capture date, iPhone model and other details hidden in a photo" width="506" height="1100" loading="lazy"></div>
+    <div class="sheet" role="img" aria-label="The iOS Share Sheet with three photos selected and Wipe highlighted among the apps">
+      <div class="sheet-head">
+        <div class="stack" aria-hidden="true"><div class="scene s0"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div><div class="scene s1"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div><div class="scene s2"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div></div>
+        <div><strong>3 Photos Selected</strong><span>Options ›</span></div>
+        <span class="close" aria-hidden="true">✕</span>
+      </div>
+      <div class="apps" aria-hidden="true">
+        <div class="app"><span class="ico g1"><svg><use href="#i-share-air"/></svg></span>AirDrop</div>
+        <div class="app"><span class="ico g2"><svg><use href="#i-bubble"/></svg></span>Messages</div>
+        <div class="app wipe"><img src="assets/app-icon-128.png" alt="" width="64" height="64">Wipe</div>
+        <div class="app"><span class="ico g3"><svg><use href="#i-mail"/></svg></span>Mail</div>
+      </div>
+      <div class="sheet-actions" aria-hidden="true"><span>Copy Photos</span><span>Save to Files</span></div>
+    </div>
     <div>
       <span class="eyebrow">Right where you share</span>
       <h2>Clean from the Share Sheet.</h2>
@@ -239,8 +282,74 @@
 <footer class="site-footer">
   <div class="wrap">
     <nav class="footer-links" aria-label="Footer"><a href="privacy/">Privacy</a><a href="support/">Support</a><a href="mailto:bashubb.dev@gmail.com">Email</a></nav>
-    <p>Made by <a href="https://bashubb.com/">Bashubb</a> · For iPhone · iOS 18 or later</p>
+    <p>Made by <a href="https://bashubb.com/">bashubb</a> · For iPhone · iOS 18 or later</p>
   </div>
 </footer>
+<script>
+// Hero deck: each moment shows its metadata, sheds it, then shuffles to the back.
+(() => {
+  const deck = document.querySelector('.deck');
+  if (!deck) return;
+  const moments = [
+    [['i-pin', 'Tarifa, Spain · 36.01° N'], ['i-clock', 'Aug 14 · 20:41'], ['i-phone', 'iPhone 16 Pro']],
+    [['i-pin', 'Home · 52.2297° N, 21.0122° E'], ['i-clock', 'Sun · 08:12'], ['i-phone', 'iPhone 15']],
+    [['i-pin', 'Home · 50.0614° N, 19.9383° E'], ['i-clock', 'Mar 3 · 18:30'], ['i-user', 'Anna K.']],
+    [['i-pin', 'Café · 48.8566° N, 2.3522° E'], ['i-clock', 'Mon · 09:05'], ['i-wand', 'Edited in Photo editor']],
+    [['i-pin', 'Campsite · 46.5577° N, 7.9853° E'], ['i-clock', 'Jul 22 · 23:14'], ['i-phone', 'iPhone 15 Pro · Night mode']],
+    [['i-pin', 'Lisbon · 38.7223° N, 9.1393° W'], ['i-clock', 'Today · 17:48'], ['i-user', '© Jan Nowak']],
+  ];
+  const cards = [...deck.querySelectorAll('.deck-card')];
+  const chips = [...deck.querySelectorAll('.chip')];
+  let order = cards.map((_, i) => i);
+  const label = top => chips.forEach((chip, i) => {
+    const [icon, text] = moments[top][i];
+    chip.querySelector('use').setAttribute('href', '#' + icon);
+    chip.querySelector('span').textContent = text;
+  });
+  const layout = () => order.forEach((card, pos) => cards[card].dataset.pos = pos);
+  label(order[0]);
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  (async function loop() {
+    for (;;) {
+      deck.classList.remove('wiping', 'cleaned');
+      await wait(1900);
+      deck.classList.add('wiping');
+      await wait(700);
+      deck.classList.add('cleaned');
+      await wait(1300);
+      const top = order.shift();
+      cards[top].dataset.pos = 'out';
+      deck.classList.remove('cleaned');
+      await wait(420);
+      order.push(top);
+      layout();
+      deck.classList.remove('wiping');
+      label(order[0]);
+      await wait(350);
+    }
+  })();
+})();
+
+// Inspector: Original / Clean copy toggle; switches once by itself when scrolled into view.
+(() => {
+  const inspector = document.querySelector('.inspector');
+  if (!inspector) return;
+  const buttons = inspector.querySelectorAll('[data-show]');
+  const show = state => {
+    inspector.dataset.state = state;
+    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.show === state)));
+  };
+  buttons.forEach(b => b.addEventListener('click', () => { touched = true; show(b.dataset.show); }));
+  let touched = false;
+  if (!('IntersectionObserver' in window)) return;
+  const observer = new IntersectionObserver(entries => {
+    if (!entries.some(e => e.isIntersecting)) return;
+    observer.disconnect();
+    setTimeout(() => { if (!touched) show('clean'); }, 1200);
+  }, { threshold: 0.6 });
+  observer.observe(inspector);
+})();
+</script>
 </body>
 </html>
