@@ -15,21 +15,7 @@
   --radius: 20px;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0f1312;
-    --bg-alt: #151a19;
-    --surface: #1a201e;
-    --text: #f0f4f2;
-    --muted: #a9b4af;
-    --line: #2a3230;
-    --teal: #93ddc6;
-    --risk-bg: #3a1f1b;
-    --risk: #ff9b8c;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 40px -18px rgba(0, 0, 0, 0.7);
-    color-scheme: dark;
-  }
-}
+/* Light only, like the app's default appearance. */
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
@@ -179,7 +165,6 @@ section { padding: clamp(72px, 10vw, 120px) 0; scroll-margin-top: 64px; }
 .promise div { text-align: center; padding: 26px 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
 .promise .icon { display: inline-flex; width: 48px; height: 48px; border-radius: 14px; background: color-mix(in srgb, var(--mint) 45%, transparent); color: var(--on-mint); align-items: center; justify-content: center; margin-bottom: 12px; }
 .promise .icon svg { width: 24px; height: 24px; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .promise .icon { color: var(--mint); } }
 .promise p { margin: 4px 0 0; font-size: 15px; }
 @media (max-width: 860px) { .promise { grid-template-columns: 1fr 1fr; } }
 
@@ -230,7 +215,6 @@ details p { margin: 10px 0 0; }
 .inspector[data-state="clean"] .insp-foot { background: color-mix(in srgb, var(--mint) 40%, transparent); color: var(--on-mint); }
 .inspector[data-state="clean"] .when-original { display: none; }
 .inspector[data-state="clean"] .when-clean { display: inline-flex; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .inspector[data-state="clean"] .insp-foot, :root:not([data-theme="light"]) .fields .gone { color: var(--mint); } }
 
 /* Share Sheet pictogram */
 .sheet { max-width: 420px; width: 100%; margin: 0 auto; background: var(--surface); border: 1px solid var(--line); border-radius: 28px; padding: 18px; box-shadow: var(--shadow); }
