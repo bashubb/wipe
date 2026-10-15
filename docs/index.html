@@ -23,8 +23,8 @@
 <link rel="icon" href="assets/fav/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/fav/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/landing.css?v=3">
-<link rel="stylesheet" href="assets/wipe.css?v=1">
+<link rel="stylesheet" href="assets/landing.css?v=6">
+<link rel="stylesheet" href="assets/wipe.css?v=10">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -459,7 +459,7 @@
   </div>
 </footer>
 
-<script src="assets/landing.js?v=1"></script>
+<script src="assets/landing.js?v=6"></script>
 <script>
 (() => {
   const L = window.Landing;
@@ -632,7 +632,7 @@
     items.forEach((it, i) => {
       const k = i - 1;
       // desktop: cards sit in a row and start pulled into one stack; phone: cards share the centre and fan out
-      const x = narrow ? k * w * 0.62 * t : -k * (w + gap) * (1 - t);
+      const x = narrow ? k * Math.min(w * 0.62, (innerWidth - w) / 2 - 8) * t : -k * (w + gap) * (1 - t);
       const z = narrow ? -150 * Math.abs(k) * t - 120 * Math.abs(k) * (1 - t) : -160 * Math.abs(k) * (1 - t);
       const ry = k * (-38 * (1 - t) - (narrow ? 22 : 7) * t);
       it.style.transform = `translateX(${x}px) translateZ(${z}px) rotateY(${ry}deg) rotateX(${(1 - t) * 14}deg)`;

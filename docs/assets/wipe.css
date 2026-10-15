@@ -117,7 +117,7 @@
 /* Presets */
 .presets { margin-top: var(--s-600); }
 .preset { display: flex; flex-direction: column; gap: var(--s-200); transition: transform var(--dur) var(--ease), border-color var(--dur) var(--ease); }
-.preset:hover { transform: translateY(-4px); border-color: #c9d8d1; }
+@media (hover: hover) and (pointer: fine) { .preset:hover { transform: translateY(-4px); border-color: #c9d8d1; } }
 .preset .badge { align-self: flex-start; padding: var(--s-50) var(--s-100); border-radius: 9999px; background: var(--accent); color: var(--on-accent); font-size: 12px; line-height: 16px; font-weight: 700; }
 .preset .badge.quiet { background: var(--bg-2); color: var(--muted); }
 .preset ul { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--s-100); font-size: 14px; line-height: 20px; }
@@ -141,7 +141,7 @@
   .fan .scene-pin { padding-top: 104px; }
   .fan-stage { gap: 0; }
   .fan-item { width: 0; overflow: visible; align-items: center; }
-  .fan-item .iphone { --w: calc(min(54vh, 480px, 100svh - 260px) * 0.4826); }
+  .fan-item .iphone { --w: calc(min(54vh, 480px, 100svh - 270px - var(--ui-bottom)) * 0.4826); }
   .fan-item figcaption { display: none; }
 }
 
@@ -202,7 +202,7 @@
 @media (max-width: 900px) { .split { grid-template-columns: 1fr; gap: var(--s-600); } }
 .tilt { perspective: 1200px; display: grid; place-items: center; }
 .tilt .iphone { --w: min(300px, 70vw); transform: rotateY(-24deg) rotateX(8deg) rotateZ(2deg); transition: transform 1200ms var(--ease); }
-.tilt:hover .iphone { transform: rotateY(-8deg) rotateX(3deg); }
+@media (hover: hover) and (pointer: fine) { .tilt:hover .iphone { transform: rotateY(-8deg) rotateX(3deg); } }
 .howto { margin: var(--s-400) 0 0; padding: 0; list-style: none; display: grid; gap: var(--s-200); }
 .howto li { display: flex; gap: var(--s-200); align-items: center; font-weight: 600; }
 .howto li span { display: inline-flex; width: 32px; height: 32px; flex: none; align-items: center; justify-content: center; border-radius: 9999px; background: var(--accent); color: var(--on-accent); font-size: 14px; }
@@ -272,16 +272,16 @@
 .way-phone { margin-top: auto; height: 300px; perspective: 1400px; display: flex; justify-content: center; overflow: hidden; }
 .way-phone .iphone { --w: 240px; margin-top: var(--s-200); transform: rotateX(18deg) rotateZ(-4deg); transform-origin: 50% 0; transition: transform 1200ms var(--ease); }
 .way.review .way-phone .iphone { transform: rotateX(18deg) rotateZ(4deg); }
-.way:hover .way-phone .iphone { transform: rotateX(6deg) translateY(-12px); }
+@media (hover: hover) and (pointer: fine) { .way:hover .way-phone .iphone { transform: rotateX(6deg) translateY(-12px); } }
 @media (prefers-reduced-motion: reduce) { .way-phone .iphone, .way:hover .way-phone .iphone { transform: none; } }
 
 /* Mode cards are links to their sections */
 .way-link { display: inline-flex; align-items: center; gap: var(--s-75); font-weight: 700; text-decoration: none; }
 .way-link svg { width: 18px; height: 18px; transition: transform var(--dur) var(--ease); }
 .way-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
-.way:hover .way-link svg { transform: translateX(4px); }
+@media (hover: hover) and (pointer: fine) { .way:hover .way-link svg { transform: translateX(4px); } }
 .way { cursor: pointer; transition: transform var(--dur) var(--ease); }
-.way:hover { transform: translateY(-4px); }
+@media (hover: hover) and (pointer: fine) { .way:hover { transform: translateY(-4px); } }
 .way:has(.way-link:focus-visible) { outline: 3px solid var(--accent-text); outline-offset: 4px; }
 .way-link:focus-visible { outline: none; }
 
@@ -290,9 +290,15 @@
 .cross span { color: var(--muted); }
 .cross b { display: inline-flex; align-items: center; gap: var(--s-50); color: var(--accent-text); }
 .cross svg { width: 16px; height: 16px; }
-.cross:hover { transform: translateY(-2px); border-color: #c9d8d1; }
+@media (hover: hover) and (pointer: fine) { .cross:hover { transform: translateY(-2px); border-color: #c9d8d1; } }
 .cross:active { transform: scale(0.98); }
 .howto li span svg { width: 16px; height: 16px; }
 .review-head { padding-bottom: 0; background: var(--bg); }
 .tilt .iphone { --w: min(300px, 70vw); }
 html { scroll-padding-top: 96px; }
+
+/* Phones: no 3D tilt in the mode cards (it distorts the body at small widths); size from the card width */
+@media (max-width: 720px) {
+  .way-phone { height: auto; aspect-ratio: 1.15; perspective: none; }
+  .way-phone .iphone, .way + .way .way-phone .iphone, .way:hover .way-phone .iphone { --w: min(58vw, 260px); transform: none; }
+}
