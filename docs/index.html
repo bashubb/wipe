@@ -1,23 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js" data-store="soon">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wipe — Remove Location &amp; Metadata from iPhone Photos and Videos</title>
-<meta name="description" content="Wipe shows what your iPhone photos, videos and Live Photos reveal — exact location, dates, device — and creates clean copies on your device, without losing quality.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wipe: Remove Location and Metadata from iPhone Photos</title>
+<meta name="description" content="See what your iPhone photos, videos and Live Photos reveal, from exact location to your phone model, and share clean copies. Everything happens on your iPhone. First 3 cleans free.">
 <link rel="canonical" href="https://bashubb.com/wipe/">
 <meta name="theme-color" content="#f7f6f2">
 <meta name="color-scheme" content="light">
+<!-- At release: <meta name="apple-itunes-app" content="app-id=APP_ID"> -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Wipe">
-<meta property="og:title" content="Wipe — Share moments. Not your private data.">
-<meta property="og:description" content="See what your photos and videos reveal. Remove it before sharing — on your iPhone, without losing quality.">
+<meta property="og:title" content="Wipe: Share photos. Not your data.">
+<meta property="og:description" content="See what your photos reveal and share clean copies. On your iPhone, without losing quality.">
 <meta property="og:url" content="https://bashubb.com/wipe/">
-<meta property="og:image" content="https://bashubb.com/wipe/assets/apple-touch-icon.png">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="assets/app-icon-128.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/site.css?v=4">
+<meta property="og:image" content="https://bashubb.com/wipe/assets/media/wipe-motion-poster.jpg">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="960">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/fav/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/fav/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="assets/fav/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/fav/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/landing.css?v=3">
+<link rel="stylesheet" href="assets/wipe.css?v=1">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,363 +34,625 @@
   "applicationCategory": "PhotographyApplication",
   "description": "Removes location and other metadata from iPhone photos, videos and Live Photos on the device, without losing quality.",
   "url": "https://bashubb.com/wipe/",
+  "image": "https://bashubb.com/wipe/assets/media/wipe-motion-poster.jpg",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
   "publisher": {"@type": "Organization", "name": "bashubb", "url": "https://bashubb.com/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Does Wipe upload my photos?", "acceptedAnswer": {"@type": "Answer", "text": "No. Wipe reads and cleans your photos and videos on your iPhone. Nothing is uploaded, there is no account and there are no ads."}},
+    {"@type": "Question", "name": "Will my photos lose quality?", "acceptedAnswer": {"@type": "Answer", "text": "JPEG and HEIC photos stay pixel identical and most videos keep their original video and audio streams. If a file cannot be copied as it is, Wipe asks before creating a new encoded version."}},
+    {"@type": "Question", "name": "Are my original photos changed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Wipe creates clean copies. Your originals stay exactly as they were."}},
+    {"@type": "Question", "name": "How much does Wipe cost?", "acceptedAnswer": {"@type": "Answer", "text": "Your first three cleans are free. After that, one purchase unlocks Wipe for good. There is no subscription."}}
+  ]
 }
 </script>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
-  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
-  <symbol id="i-wand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20 15 9M14 4v3M19 9h-3M18 5l-2 2M9.5 4.5l.5 1.5M19.5 14.5l-1.5-.5"/></symbol>
-  <symbol id="i-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 6h14M5 11h14M5 16h9"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
-  <symbol id="i-device" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10 11.5l1.5 1.5 3-3"/></symbol>
-  <symbol id="i-noacc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6M3 3l18 18"/></symbol>
-  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></symbol>
-  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="13" height="13" rx="3"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
-  <symbol id="i-share-air" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5.6 16.4a8 8 0 1 1 12.8 0M8.5 13.8a4 4 0 1 1 7 0"/><path d="M12 13v8"/></symbol>
-  <symbol id="i-bubble" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4C6.5 4 3 7.4 3 11.2c0 2.2 1.2 4.2 3.2 5.5L5.5 20l3.6-2c.9.2 1.9.4 2.9.4 5.5 0 9-3.4 9-7.2S17.5 4 12 4z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
-</svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-arrow-right" viewBox="0 0 256 256" fill="currentColor"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"/></symbol><symbol id="i-check" viewBox="0 0 256 256" fill="currentColor"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"/></symbol><symbol id="i-check-circle" viewBox="0 0 256 256" fill="currentColor"><path d="M176.49,95.51a12,12,0,0,1,0,17l-56,56a12,12,0,0,1-17,0l-24-24a12,12,0,1,1,17-17L112,143l47.51-47.52A12,12,0,0,1,176.49,95.51ZM236,128A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Z"/></symbol><symbol id="i-clock" viewBox="0 0 256 256" fill="currentColor"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm68-84a12,12,0,0,1-12,12H128a12,12,0,0,1-12-12V72a12,12,0,0,1,24,0v44h44A12,12,0,0,1,196,128Z"/></symbol><symbol id="i-cloud-slash" viewBox="0 0 256 256" fill="currentColor"><path d="M56.88,31.93A12,12,0,1,0,39.12,48.07L71.79,84A68,68,0,0,0,72,220h88a91.26,91.26,0,0,0,30.66-5.24l8.46,9.31a12,12,0,0,0,17.76-16.14ZM160,196H72a44,44,0,0,1-1.8-87.95A91.91,91.91,0,0,0,68,128a12,12,0,0,0,24,0,68.22,68.22,0,0,1,2.66-18.84l77.88,85.67A68.67,68.67,0,0,1,160,196Zm92-68a91.32,91.32,0,0,1-17.53,54,12,12,0,1,1-19.41-14.11,68,68,0,0,0-89.57-98.53,12,12,0,0,1-12.2-20.66A92,92,0,0,1,252,128Z"/></symbol><symbol id="i-device-mobile" viewBox="0 0 256 256" fill="currentColor"><path d="M176,12H80A28,28,0,0,0,52,40V216a28,28,0,0,0,28,28h96a28,28,0,0,0,28-28V40A28,28,0,0,0,176,12ZM76,76H180V180H76Zm4-40h96a4,4,0,0,1,4,4V52H76V40A4,4,0,0,1,80,36Zm96,184H80a4,4,0,0,1-4-4V204H180v12A4,4,0,0,1,176,220Z"/></symbol><symbol id="i-export" viewBox="0 0 256 256" fill="currentColor"><path d="M220,112v96a20,20,0,0,1-20,20H56a20,20,0,0,1-20-20V112A20,20,0,0,1,56,92H76a12,12,0,0,1,0,24H60v88H196V116H180a12,12,0,0,1,0-24h20A20,20,0,0,1,220,112ZM96.49,72.49,116,53v83a12,12,0,0,0,24,0V53l19.51,19.52a12,12,0,1,0,17-17l-40-40a12,12,0,0,0-17,0l-40,40a12,12,0,1,0,17,17Z"/></symbol><symbol id="i-eye" viewBox="0 0 256 256" fill="currentColor"><path d="M251,123.13c-.37-.81-9.13-20.26-28.48-39.61C196.63,57.67,164,44,128,44S59.37,57.67,33.51,83.52C14.16,102.87,5.4,122.32,5,123.13a12.08,12.08,0,0,0,0,9.75c.37.82,9.13,20.26,28.49,39.61C59.37,198.34,92,212,128,212s68.63-13.66,94.48-39.51c19.36-19.35,28.12-38.79,28.49-39.61A12.08,12.08,0,0,0,251,123.13Zm-46.06,33C183.47,177.27,157.59,188,128,188s-55.47-10.73-76.91-31.88A130.36,130.36,0,0,1,29.52,128,130.45,130.45,0,0,1,51.09,99.89C72.54,78.73,98.41,68,128,68s55.46,10.73,76.91,31.89A130.36,130.36,0,0,1,226.48,128,130.45,130.45,0,0,1,204.91,156.12ZM128,84a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,84Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,148Z"/></symbol><symbol id="i-eye-slash" viewBox="0 0 256 256" fill="currentColor"><path d="M56.88,31.93A12,12,0,1,0,39.12,48.07l16,17.65C20.67,88.66,5.72,121.58,5,123.13a12.08,12.08,0,0,0,0,9.75c.37.82,9.13,20.26,28.49,39.61C59.37,198.34,92,212,128,212a131.34,131.34,0,0,0,51-10l20.09,22.1a12,12,0,0,0,17.76-16.14ZM128,188c-29.59,0-55.47-10.73-76.91-31.88A130.69,130.69,0,0,1,29.52,128c5.27-9.31,18.79-29.9,42-44.29l90.09,99.11A109.33,109.33,0,0,1,128,188Zm123-55.12c-.36.81-9,20-28,39.16a12,12,0,1,1-17-16.9A130.48,130.48,0,0,0,226.48,128a130.36,130.36,0,0,0-21.57-28.12C183.46,78.73,157.59,68,128,68c-3.35,0-6.7.14-10,.42a12,12,0,1,1-2-23.91c3.93-.34,8-.51,12-.51,36,0,68.63,13.67,94.49,39.52,19.35,19.35,28.11,38.8,28.48,39.61A12.08,12.08,0,0,1,251,132.88Z"/></symbol><symbol id="i-image" viewBox="0 0 256 256" fill="currentColor"><path d="M144,96a16,16,0,1,1,16,16A16,16,0,0,1,144,96Zm92-40V200a20,20,0,0,1-20,20H40a20,20,0,0,1-20-20V56A20,20,0,0,1,40,36H216A20,20,0,0,1,236,56ZM44,60v79.72l33.86-33.86a20,20,0,0,1,28.28,0L147.31,147l17.18-17.17a20,20,0,0,1,28.28,0L212,149.09V60Zm0,136H162.34L92,125.66l-48,48Zm168,0V183l-33.37-33.37L164.28,164l32,32Z"/></symbol><symbol id="i-images-square" viewBox="0 0 256 256" fill="currentColor"><path d="M208,28H88A20,20,0,0,0,68,48V60H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V188h12a20,20,0,0,0,20-20V48A20,20,0,0,0,208,28ZM92,52H204v59.72l-9.86-9.86a20,20,0,0,0-28.28,0L103.72,164H92Zm80,152H52V84H68v84a20,20,0,0,0,20,20h84Zm-34.34-40L180,121.66l24,24V164ZM108,88a20,20,0,1,1,20,20A20,20,0,0,1,108,88Z"/></symbol><symbol id="i-infinity" viewBox="0 0 256 256" fill="currentColor"><path d="M252,128a60,60,0,0,1-102.43,42.43l-.49-.53L89.22,102.31a36,36,0,1,0,0,51.38l3.08-3.48a12,12,0,1,1,18,15.91l-3.35,3.78-.49.53a60,60,0,1,1,0-84.86l.49.53,59.86,67.59a36,36,0,1,0,0-51.38l-3.08,3.48a12,12,0,1,1-18-15.91l3.35-3.78.49-.53A60,60,0,0,1,252,128Z"/></symbol><symbol id="i-lightning" viewBox="0 0 256 256" fill="currentColor"><path d="M219.71,117.38a12,12,0,0,0-7.25-8.52L161.28,88.39l10.59-70.61a12,12,0,0,0-20.64-10l-112,120a12,12,0,0,0,4.31,19.33l51.18,20.47L84.13,238.22a12,12,0,0,0,20.64,10l112-120A12,12,0,0,0,219.71,117.38ZM113.6,203.55l6.27-41.77a12,12,0,0,0-7.41-12.92L68.74,131.37,142.4,52.45l-6.27,41.77a12,12,0,0,0,7.41,12.92l43.72,17.49Z"/></symbol><symbol id="i-magic-wand" viewBox="0 0 256 256" fill="currentColor"><path d="M252,152a12,12,0,0,1-12,12H228v12a12,12,0,0,1-24,0V164H192a12,12,0,0,1,0-24h12V128a12,12,0,0,1,24,0v12h12A12,12,0,0,1,252,152ZM56,76H68V88a12,12,0,0,0,24,0V76h12a12,12,0,1,0,0-24H92V40a12,12,0,0,0-24,0V52H56a12,12,0,0,0,0,24ZM184,188h-4v-4a12,12,0,0,0-24,0v4h-4a12,12,0,0,0,0,24h4v4a12,12,0,0,0,24,0v-4h4a12,12,0,0,0,0-24ZM222.14,82.83,82.82,222.14a20,20,0,0,1-28.28,0L33.85,201.46a20,20,0,0,1,0-28.29L173.17,33.86a20,20,0,0,1,28.28,0l20.69,20.68A20,20,0,0,1,222.14,82.83ZM159,112,144,97,53.65,187.31l15,15Zm43.31-43.31-15-15L161,80l15,15Z"/></symbol><symbol id="i-magnifying-glass-plus" viewBox="0 0 256 256" fill="currentColor"><path d="M156,112a12,12,0,0,1-12,12H124v20a12,12,0,0,1-24,0V124H80a12,12,0,0,1,0-24h20V80a12,12,0,0,1,24,0v20h20A12,12,0,0,1,156,112Zm76.49,120.49a12,12,0,0,1-17,0L168,185a92.12,92.12,0,1,1,17-17l47.54,47.53A12,12,0,0,1,232.49,232.49ZM112,180a68,68,0,1,0-68-68A68.08,68.08,0,0,0,112,180Z"/></symbol><symbol id="i-map-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,60a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,60Zm0,64a20,20,0,1,1,20-20A20,20,0,0,1,128,124Zm0-112a92.1,92.1,0,0,0-92,92c0,77.36,81.64,135.4,85.12,137.83a12,12,0,0,0,13.76,0,259,259,0,0,0,42.18-39C205.15,170.57,220,136.37,220,104A92.1,92.1,0,0,0,128,12Zm31.3,174.71A249.35,249.35,0,0,1,128,216.89a249.35,249.35,0,0,1-31.3-30.18C80,167.37,60,137.31,60,104a68,68,0,0,1,136,0C196,137.31,176,167.37,159.3,186.71Z"/></symbol><symbol id="i-plus" viewBox="0 0 256 256" fill="currentColor"><path d="M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z"/></symbol><symbol id="i-share-network" viewBox="0 0 256 256" fill="currentColor"><path d="M176,156a43.78,43.78,0,0,0-29.09,11L106.1,140.8a44.07,44.07,0,0,0,0-25.6L146.91,89a43.83,43.83,0,1,0-13-20.17L93.09,95a44,44,0,1,0,0,65.94L133.9,187.2A44,44,0,1,0,176,156Zm0-120a20,20,0,1,1-20,20A20,20,0,0,1,176,36ZM64,148a20,20,0,1,1,20-20A20,20,0,0,1,64,148Zm112,72a20,20,0,1,1,20-20A20,20,0,0,1,176,220Z"/></symbol><symbol id="i-shield-check" viewBox="0 0 256 256" fill="currentColor"><path d="M208,36H48A20,20,0,0,0,28,56v56c0,54.29,26.32,87.22,48.4,105.29,23.71,19.39,47.44,26,48.44,26.29a12.1,12.1,0,0,0,6.32,0c1-.28,24.73-6.9,48.44-26.29,22.08-18.07,48.4-51,48.4-105.29V56A20,20,0,0,0,208,36Zm-4,76c0,35.71-13.09,64.69-38.91,86.15A126.28,126.28,0,0,1,128,219.38a126.14,126.14,0,0,1-37.09-21.23C65.09,176.69,52,147.71,52,112V60H204ZM79.51,144.49a12,12,0,1,1,17-17L112,143l47.51-47.52a12,12,0,0,1,17,17l-56,56a12,12,0,0,1-17,0Z"/></symbol><symbol id="i-text-align-left" viewBox="0 0 256 256" fill="currentColor"><path d="M28,64A12,12,0,0,1,40,52H216a12,12,0,0,1,0,24H40A12,12,0,0,1,28,64Zm12,52H168a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24Zm176,16H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Zm-48,40H40a12,12,0,0,0,0,24H168a12,12,0,0,0,0-24Z"/></symbol><symbol id="i-user" viewBox="0 0 256 256" fill="currentColor"><path d="M234.38,210a123.36,123.36,0,0,0-60.78-53.23,76,76,0,1,0-91.2,0A123.36,123.36,0,0,0,21.62,210a12,12,0,1,0,20.77,12c18.12-31.32,50.12-50,85.61-50s67.49,18.69,85.61,50a12,12,0,0,0,20.77-12ZM76,96a52,52,0,1,1,52,52A52.06,52.06,0,0,1,76,96Z"/></symbol><symbol id="i-x" viewBox="0 0 256 256" fill="currentColor"><path d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"/></symbol></svg>
 
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <nav class="nav wrap" aria-label="Main navigation">
-    <a class="brand" href="./"><img src="assets/app-icon-128.png" alt="" width="34" height="34">Wipe</a>
-    <div class="nav-links">
-      <a class="hide-sm" href="#how">How it works</a>
-      <a class="hide-sm" href="#presets">Presets</a>
-      <a href="support/">Support</a>
-    </div>
-  </nav>
-</header>
+
+<nav class="island" aria-label="Main navigation">
+  <a class="brand" href="./"><img src="assets/app-icon-128.png" alt="" width="28" height="28">Wipe</a>
+  <div class="links">
+    <a href="#layers">How it works</a>
+    <a href="#modes">Two ways</a>
+    <a href="#export">Export</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a class="btn sm cta when-live" href="https://apps.apple.com/us/search?term=Wipe%20Photo%20Metadata%20Cleaner" data-store-link>Download</a>
+  <span class="btn sm cta when-soon" aria-disabled="true">Coming soon</span>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+</nav>
+<div class="menu" id="menu">
+  <a href="#layers">How it works</a>
+  <a href="#modes">Two ways</a>
+  <a href="#export">Export</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#faq">FAQ</a>
+  <a href="support/">Support</a>
+</div>
 
 <main id="main">
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow">Photo &amp; video privacy for iPhone</span>
-      <h1>Share moments.<br>Not your private data.</h1>
-      <p class="lead">Every photo you take can carry your exact location, the time, your phone model and your name. Wipe shows you what’s hidden — and makes clean copies before you share.</p>
-      <div class="hero-cta">
-        <span class="button" aria-disabled="true">Coming soon <span class="soon">to the App Store</span></span>
+
+<section class="scene hero stage3d" data-scene="hero" aria-labelledby="hero-title">
+  <div class="scene-pin">
+    <div class="hero-copy wrap">
+      <span class="eyebrow">Photo metadata cleaner for iPhone</span>
+      <h1 class="hero-title" id="hero-title">Share your photos.<br>Keep your location.</h1>
+      <p class="lead">Clean a whole batch in seconds, or open every photo, video and Live Photo and see what it really reveals before you decide. All on your iPhone. Your originals never change.</p>
+      <div class="cta-row">
+        <a class="store-badge when-live" href="https://apps.apple.com/us/search?term=Wipe%20Photo%20Metadata%20Cleaner" data-store-link><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a>
+        <span class="btn when-soon" aria-disabled="true">Coming soon to the App Store</span>
       </div>
-      <ul class="trust">
-        <li>Works on your iPhone</li>
-        <li>No account</li>
-        <li>Originals untouched</li>
+      <ul class="proof" aria-label="Highlights">
+        <li><svg aria-hidden="true"><use href="#i-check-circle"/></svg>First 3 cleans free</li>
+        <li><svg aria-hidden="true"><use href="#i-cloud-slash"/></svg>Nothing uploaded</li>
+        <li><svg aria-hidden="true"><use href="#i-image"/></svg>Pixel identical JPEG and HEIC</li>
       </ul>
     </div>
-
-    <div class="stage deck" role="img" aria-label="Shared moments — a beach selfie, a dog in the park, a birthday cake — each losing its location, time and device details and becoming a clean copy">
-      <div class="deck-card" data-pos="0"><img src="assets/moments/beach.svg" alt="" width="300" height="400"></div>
-      <div class="deck-card" data-pos="1"><img src="assets/moments/dog.svg" alt="" width="300" height="400"></div>
-      <div class="deck-card" data-pos="2"><img src="assets/moments/cake.svg" alt="" width="300" height="400"></div>
-      <div class="deck-card" data-pos="3"><img src="assets/moments/coffee.svg" alt="" width="300" height="400"></div>
-      <div class="deck-card" data-pos="4"><img src="assets/moments/camp.svg" alt="" width="300" height="400"></div>
-      <div class="deck-card" data-pos="5"><img src="assets/moments/city.svg" alt="" width="300" height="400"></div>
-      <span class="chip c1" aria-hidden="true"><svg><use href="#i-pin"/></svg><span></span></span>
-      <span class="chip c2" aria-hidden="true"><svg><use href="#i-clock"/></svg><span></span></span>
-      <span class="chip c3" aria-hidden="true"><svg><use href="#i-phone"/></svg><span></span></span>
-      <span class="dust" style="top:10%;left:14%;--dx:-14px;--dy:-60px;animation-delay:0s" aria-hidden="true"></span>
-      <span class="dust" style="top:12%;left:30%;--dx:10px;--dy:-70px;animation-delay:0.05s" aria-hidden="true"></span>
-      <span class="dust" style="top:9%;left:44%;--dx:22px;--dy:-52px;animation-delay:0.1s" aria-hidden="true"></span>
-      <span class="dust" style="top:34%;left:72%;--dx:24px;--dy:-58px;animation-delay:0.12s" aria-hidden="true"></span>
-      <span class="dust" style="top:36%;left:62%;--dx:-8px;--dy:-66px;animation-delay:0.16s" aria-hidden="true"></span>
-      <span class="dust" style="top:32%;left:80%;--dx:6px;--dy:-48px;animation-delay:0.2s" aria-hidden="true"></span>
-      <span class="dust" style="top:74%;left:8%;--dx:-20px;--dy:-62px;animation-delay:0.22s" aria-hidden="true"></span>
-      <span class="dust" style="top:76%;left:20%;--dx:8px;--dy:-72px;animation-delay:0.26s" aria-hidden="true"></span>
-      <span class="dust" style="top:72%;left:30%;--dx:16px;--dy:-54px;animation-delay:0.3s" aria-hidden="true"></span>
-      <span class="clean-badge" aria-hidden="true"><svg width="18" height="18"><use href="#i-check"/></svg>Clean copy</span>
+    <div class="tunnel" aria-hidden="true">
+      <div class="fly" data-x="-40" data-y="-22" data-z="-500" data-r="-6"><img src="assets/moments/beach.svg" alt="" width="300" height="400"><span class="ftag"><svg><use href="#i-map-pin"/></svg>50.0614, 19.9383</span><span class="fok"><svg><use href="#i-check"/></svg></span></div>
+      <div class="fly" data-x="44" data-y="20" data-z="-950" data-r="5"><img src="assets/moments/dog.svg" alt="" width="300" height="400"><span class="ftag"><svg><use href="#i-clock"/></svg>Sat · 9:14 AM</span><span class="fok"><svg><use href="#i-check"/></svg></span></div>
+      <div class="fly" data-x="-44" data-y="26" data-z="-1450" data-r="4"><img src="assets/moments/cake.svg" alt="" width="300" height="400"><span class="ftag"><svg><use href="#i-device-mobile"/></svg>iPhone 17 Pro</span><span class="fok"><svg><use href="#i-check"/></svg></span></div>
+      <div class="fly" data-x="42" data-y="-24" data-z="-1900" data-r="-5"><img src="assets/moments/coffee.svg" alt="" width="300" height="400"><span class="ftag"><svg><use href="#i-map-pin"/></svg>52.2297, 21.0122</span><span class="fok"><svg><use href="#i-check"/></svg></span></div>
+      <div class="fly" data-x="-38" data-y="-6" data-z="-2350" data-r="-3"><img src="assets/moments/camp.svg" alt="" width="300" height="400"><span class="ftag"><svg><use href="#i-user"/></svg>Maya Okafor</span><span class="fok"><svg><use href="#i-check"/></svg></span></div>
+      <div class="fly" data-x="36" data-y="18" data-z="-2800" data-r="6"><img src="assets/moments/city.svg" alt="" width="300" height="400"><span class="ftag"><svg><use href="#i-clock"/></svg>Jun 14 · 6:42 PM</span><span class="fok"><svg><use href="#i-check"/></svg></span></div>
+    </div>
+    <div class="hero-card" id="hero-card">
+      <video id="motion" muted playsinline preload="auto" poster="assets/media/wipe-motion-poster.jpg" aria-label="A sponge wipes location, time, device and author tags off a family photo; the photo itself stays the same">
+        <source src="assets/media/wipe-motion.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="chapters" id="chapters" aria-hidden="true">
+      <div><i><b></b></i><span>Reveal</span></div>
+      <div><i><b></b></i><span>Wipe</span></div>
+      <div><i><b></b></i><span>Verify</span></div>
+      <div><i><b></b></i><span>Share</span></div>
+      <span class="hold-hint" id="hold-hint">Playing · pull hard to skip</span>
     </div>
   </div>
 </section>
 
-<section class="alt" id="reveals">
-  <div class="wrap split">
-    <div>
-      <span class="eyebrow">Hidden in the file</span>
-      <h2>Your photo says more than you think.</h2>
-      <p class="lead">Metadata is invisible in the picture but travels with the file — to chats, email, marketplaces and cloud folders. Wipe finds it and explains it in plain language.</p>
-      <div class="reveal-list">
-        <div class="reveal-item"><span class="label"><svg><use href="#i-pin"/></svg>Exact location</span><p>GPS coordinates down to your street, home or workplace.</p></div>
-        <div class="reveal-item"><span class="label"><svg><use href="#i-clock"/></svg>Capture time</span><p>The exact date and minute the moment happened.</p></div>
-        <div class="reveal-item"><span class="label"><svg><use href="#i-phone"/></svg>Device &amp; lens</span><p>Your phone model, camera and lens details.</p></div>
-        <div class="reveal-item"><span class="label"><svg><use href="#i-user"/></svg>Author &amp; copyright</span><p>Names and ownership fields added by apps.</p></div>
-        <div class="reveal-item"><span class="label"><svg><use href="#i-wand"/></svg>Editing apps</span><p>Which software touched the file, and when.</p></div>
-        <div class="reveal-item"><span class="label"><svg><use href="#i-text"/></svg>Captions &amp; keywords</span><p>Descriptions and tags you may have forgotten.</p></div>
+<section class="scene layers stage3d" id="layers" data-scene="layers" aria-labelledby="layers-title">
+  <div class="scene-pin">
+    <div class="wrap layers-grid">
+      <div>
+        <div class="steps">
+          <div class="step on" data-step="0">
+            <span class="num">1</span>
+            <h2 class="title" id="layers-title">Every photo has a second layer.</h2>
+            <p class="lead">Your iPhone writes where, when and with what into the file. You never see it. Everyone you send it to can.</p>
+          </div>
+          <div class="step" data-step="1">
+            <span class="num">2</span>
+            <h2 class="title">Wipe pulls it apart.</h2>
+            <p class="lead">Location, capture time, device, author and editing apps, explained in plain words before anything changes.</p>
+          </div>
+          <div class="step" data-step="2">
+            <span class="num">3</span>
+            <h2 class="title">Then wipes what gives you away.</h2>
+            <p class="lead">Pick a preset. Wipe removes those details and checks every copy again before you can share it.</p>
+          </div>
+        </div>
+        <div class="progress" aria-hidden="true"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+      </div>
+      <div class="photo-stage" role="img" aria-label="A beach photo with location, time, device and author tags lifting off it and being wiped away; camera settings stay">
+        <div class="photo-obj obj" id="photo">
+          <div class="plane" style="--z:120"></div>
+          <div class="print"><img src="assets/moments/beach.svg" alt="" width="300" height="400"></div>
+          <span class="tag" data-z="230" data-x="-26" data-y="6" data-wipe="0"><span class="ic"><svg><use href="#i-map-pin"/></svg></span><span><small>LOCATION</small>50.0614, 19.9383</span></span>
+          <span class="tag" data-z="170" data-x="54" data-y="24" data-wipe="1"><span class="ic"><svg><use href="#i-clock"/></svg></span><span><small>TIME</small>Jun 14 · 6:42 PM</span></span>
+          <span class="tag" data-z="110" data-x="-28" data-y="52" data-wipe="2"><span class="ic"><svg><use href="#i-device-mobile"/></svg></span><span><small>DEVICE</small>iPhone 17 Pro</span></span>
+          <span class="tag" data-z="200" data-x="50" data-y="62" data-wipe="3"><span class="ic"><svg><use href="#i-user"/></svg></span><span><small>AUTHOR</small>Maya Okafor</span></span>
+          <span class="tag keep" data-z="70" data-x="-18" data-y="76"><span class="ic"><svg><use href="#i-check"/></svg></span><span><small>CAMERA</small>ƒ1.8 · 1/120 s<span class="kept">Kept</span></span></span>
+          <span class="sweep" aria-hidden="true"></span>
+          <span class="clean-pill"><svg><use href="#i-check-circle"/></svg>Clean · 0 tags left</span>
+        </div>
       </div>
     </div>
-    <div class="inspector" id="inspector" data-state="original">
+  </div>
+</section>
+
+<section class="pad" id="reveals" aria-labelledby="reveals-title">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Full review: what you’ll find</span>
+      <h2 class="title" id="reveals-title">Your photo says more than you think.</h2>
+      <p class="lead">Metadata is invisible in the picture but travels with the file to chats, email, marketplaces and cloud folders. Wipe finds it and explains it in plain language.</p>
+      <div class="reveal-list">
+        <div><svg aria-hidden="true"><use href="#i-map-pin"/></svg><b>Exact location</b><span>GPS coordinates down to your street, home or workplace.</span></div>
+        <div><svg aria-hidden="true"><use href="#i-clock"/></svg><b>Capture time</b><span>The exact date and minute the moment happened.</span></div>
+        <div><svg aria-hidden="true"><use href="#i-device-mobile"/></svg><b>Device and lens</b><span>Your phone model, camera and lens details.</span></div>
+        <div><svg aria-hidden="true"><use href="#i-user"/></svg><b>Author and copyright</b><span>Names and ownership fields added by apps.</span></div>
+        <div><svg aria-hidden="true"><use href="#i-magic-wand"/></svg><b>Editing apps</b><span>Which software touched the file, and when.</span></div>
+        <div><svg aria-hidden="true"><use href="#i-text-align-left"/></svg><b>Captions and keywords</b><span>Descriptions and tags you may have forgotten.</span></div>
+      </div>
+    </div>
+    <div class="inspector reveal d1" id="inspector" data-state="original">
       <div class="insp-head">
-        <div class="thumb scene" aria-hidden="true"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div>
-        <div><strong>IMG_4821.HEIC</strong><span class="insp-sub">Photo · 12 MP</span></div>
+        <img src="assets/moments/camp.svg" alt="" width="56" height="56">
+        <div><strong>IMG_4821.HEIC</strong><span>Photo · 12 MP</span></div>
       </div>
       <div class="seg" role="group" aria-label="Show metadata of">
         <button type="button" data-show="original" aria-pressed="true">Original</button>
         <button type="button" data-show="clean" aria-pressed="false">Clean copy</button>
       </div>
       <ul class="fields">
-        <li class="rm" style="--i:0"><svg><use href="#i-pin"/></svg><span class="k">Location</span><span class="v">50.0614° N, 19.9383° E</span><span class="gone">Removed</span></li>
-        <li class="rm" style="--i:1"><svg><use href="#i-clock"/></svg><span class="k">Captured</span><span class="v">May 12, 2024 · 10:32</span><span class="gone">Removed</span></li>
-        <li class="rm" style="--i:2"><svg><use href="#i-phone"/></svg><span class="k">Device</span><span class="v">iPhone 15 Pro · 24 mm</span><span class="gone">Removed</span></li>
-        <li class="rm" style="--i:3"><svg><use href="#i-user"/></svg><span class="k">Author</span><span class="v">Jane Doe</span><span class="gone">Removed</span></li>
-        <li class="rm" style="--i:4"><svg><use href="#i-wand"/></svg><span class="k">Edited with</span><span class="v">Photo editor 9.2</span><span class="gone">Removed</span></li>
-        <li class="keep" style="--i:5"><svg><use href="#i-check"/></svg><span class="k">Camera</span><span class="v">1/120 s · ƒ1.8 · ISO 100</span><span class="gone">Kept</span></li>
+        <li class="rm" style="--i:0"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span class="k">Location</span><span class="v">50.0614° N, 19.9383° E</span><span class="gone">Removed</span></li>
+        <li class="rm" style="--i:1"><svg aria-hidden="true"><use href="#i-clock"/></svg><span class="k">Captured</span><span class="v">May 12, 2024 · 10:32</span><span class="gone">Removed</span></li>
+        <li class="rm" style="--i:2"><svg aria-hidden="true"><use href="#i-device-mobile"/></svg><span class="k">Device</span><span class="v">iPhone 15 Pro · 24 mm</span><span class="gone">Removed</span></li>
+        <li class="rm" style="--i:3"><svg aria-hidden="true"><use href="#i-user"/></svg><span class="k">Author</span><span class="v">Maya Okafor</span><span class="gone">Removed</span></li>
+        <li class="rm" style="--i:4"><svg aria-hidden="true"><use href="#i-magic-wand"/></svg><span class="k">Edited with</span><span class="v">Photo editor 9.2</span><span class="gone">Removed</span></li>
+        <li class="keep" style="--i:5"><svg aria-hidden="true"><use href="#i-check"/></svg><span class="k">Camera</span><span class="v">1/120 s · ƒ1.8 · ISO 100</span><span class="gone">Kept</span></li>
       </ul>
-      <div class="insp-foot"><span class="when-original">5 details can identify you</span><span class="when-clean"><svg width="16" height="16"><use href="#i-check"/></svg>Safe to Share · quality preserved</span></div>
+      <div class="insp-foot"><span class="when-original">5 details can identify you</span><span class="when-clean"><svg aria-hidden="true"><use href="#i-check-circle"/></svg>Safe to Share · quality preserved</span></div>
     </div>
   </div>
 </section>
 
-<section id="modes">
+<section class="tagline-band" aria-label="Wipe in one line">
   <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">Two ways to Wipe</span>
-      <h2>One tap when you’re in a hurry.<br>Every detail when it matters.</h2>
-      <p class="lead">Clean a whole batch straight from Photos in seconds, or open Wipe and decide photo by photo.</p>
-    </div>
-    <div class="presets modes">
-      <div class="preset featured">
-        <span class="tag">Fastest</span>
-        <h3>Quick clean</h3>
-        <p>Right from the Photos app. No need to open Wipe.</p>
-        <ul>
-          <li><span class="kp">1</span>Select photos and videos, tap Share</li>
-          <li><span class="kp">2</span>Choose Wipe, tap Clean</li>
-          <li><span class="kp">✓</span>One preset for the whole batch, Safe to Share by default</li>
-          <li><span class="kp">✓</span>Clean copies saved straight back to Photos</li>
-        </ul>
-        <p class="mode-note">Part of Wipe Pro.</p>
-      </div>
-      <div class="preset">
-        <span class="tag quiet">Most control</span>
-        <h3>Full review</h3>
-        <p>In the app, for the photos you want to check closely.</p>
-        <ul>
-          <li><span class="kp">✓</span>See every detail each photo and video carries</li>
-          <li><span class="kp">✓</span>Pick a preset for each item, or one for all</li>
-          <li><span class="kp">✓</span>Open the exact fields: coordinates, time, device</li>
-          <li><span class="kp">✓</span>A verified report, then share or save to Photos or Files</li>
-        </ul>
-      </div>
-    </div>
+    <p class="tagline" data-tagline>Share photos. <span class="hl">Not your data.</span><br>Nothing leaves your iPhone and your originals never change.</p>
   </div>
 </section>
 
-<section id="how">
-  <div class="wrap center">
-    <span class="eyebrow">Full review, step by step</span>
-    <h2>Choose. Review. Share clean.</h2>
-    <p class="lead">Pick photos, videos or Live Photos, see what each one reveals, and get verified clean copies in seconds.</p>
-    <div class="phones">
-      <figure>
-        <div class="picto" aria-hidden="true">
-          <div class="scene"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div>
-          <span class="tagchip" style="top:14%;left:9%"><svg><use href="#i-pin"/></svg>Location</span>
-          <span class="tagchip" style="top:34%;right:7%"><svg><use href="#i-clock"/></svg>May 12</span>
-          <span class="tagchip" style="bottom:12%;left:12%"><svg><use href="#i-phone"/></svg>iPhone</span>
-          <span class="lens"></span>
-        </div>
-        <figcaption><span class="step">1</span><h3>See what’s inside</h3><p>Pick photos, videos or Live Photos. Wipe scans them on your iPhone and shows every detail it found.</p></figcaption>
-      </figure>
-      <figure>
-        <div class="picto" aria-hidden="true">
-          <span class="ring"></span>
-          <div class="scene" style="width:42%"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div>
-        </div>
-        <figcaption><span class="step">2</span><h3>Clean and verify</h3><p>Wipe removes what you chose, then re-checks every copy before you can share it.</p></figcaption>
-      </figure>
-      <figure>
-        <div class="picto" aria-hidden="true">
-          <div class="scene"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div>
-          <span class="ok"><svg><use href="#i-check"/></svg></span>
-          <span class="send"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5"/></svg></span>
-        </div>
-        <figcaption><span class="step">3</span><h3>Share with confidence</h3><p>Send them anywhere, save them to Photos or Files. Your originals stay exactly as they were.</p></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<section class="band" id="quality">
+<section class="pad modes2" id="modes" aria-labelledby="modes-title">
   <div class="wrap">
-    <span class="eyebrow">Quality preserved</span>
-    <h2>Only the metadata changes.<br>Not a single pixel.</h2>
-    <p class="lead">Most metadata removers save a new, recompressed copy. Wipe rewrites only the hidden details and copies your photo and video data as it is — then checks that it really is.</p>
-    <div class="stats">
-      <div class="stat"><span class="big">0</span><p>pixels changed in cleaned JPEG and HEIC photos</p></div>
-      <div class="stat"><span class="big">1:1</span><p>video and audio streams, copied bit for bit</p></div>
-      <div class="stat"><span class="big">Live</span><p>Live Photos stay paired and keep playing</p></div>
-      <div class="stat"><span class="big">HDR</span><p>HDR and Portrait data left exactly where they were</p></div>
+    <div class="center reveal">
+      <span class="eyebrow">Then choose how</span>
+      <h2 class="title" id="modes-title">In a hurry? Seconds.<br>Want to be sure? See every detail.</h2>
+      <p class="lead">Clean a whole batch straight from Photos with one tap, or open each photo, see exactly what it carries and decide what goes.</p>
     </div>
-    <p style="margin-top:24px;font-size:14px">When a file can’t be copied as it is, Wipe tells you before it creates a new encoded version — never silently.</p>
+    <div class="ways">
+      <article class="way quick reveal">
+        <div class="way-head">
+          <span class="way-ic"><svg aria-hidden="true"><use href="#i-lightning"/></svg></span>
+          <div><h3>Quick clean</h3><span class="way-time">About 5 seconds</span></div>
+        </div>
+        <ol class="way-steps">
+          <li><span>1</span>Pick photos, videos and Live Photos</li>
+          <li><span>2</span>Keep one preset for all of them</li>
+          <li><span>3</span>Tap Quick Clean</li>
+          <li><span>4</span>Verified copies, ready to share</li>
+        </ol>
+        <p class="way-best"><b>Best for</b> sending a few photos right now.</p>
+        <a class="way-link" href="#quick">See Quick clean<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <div class="way-phone"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeQuickCleanPreview.webp" alt="Quick Clean: six items ready, one preset for every item, one Quick Clean button" width="840" height="1741" loading="lazy"></div></div>
+      </article>
+      <article class="way review reveal d1">
+        <div class="way-head">
+          <span class="way-ic"><svg aria-hidden="true"><use href="#i-magnifying-glass-plus"/></svg></span>
+          <div><h3>Full review</h3><span class="way-time">As long as you want</span></div>
+        </div>
+        <ol class="way-steps">
+          <li><span><svg><use href="#i-eye"/></svg></span>See every field: exact coordinates, time, device, author</li>
+          <li><span><svg><use href="#i-text-align-left"/></svg></span>Read why each one matters, in plain words</li>
+          <li><span><svg><use href="#i-check"/></svg></span>Choose what goes, for one photo or all of them</li>
+          <li><span><svg><use href="#i-shield-check"/></svg></span>Get a verified report before you share</li>
+        </ol>
+        <p class="way-best"><b>Best for</b> listings, documents, anything you need to be sure about.</p>
+        <a class="way-link" href="#review">See Full review<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <div class="way-phone"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeItemDetailsPreview.webp" alt="Location details of a video: exact coordinates 50.0614, 19.9383 will be removed, with a note on why removing location matters" width="840" height="1741" loading="lazy"></div></div>
+      </article>
+    </div>
   </div>
 </section>
 
-<section id="presets">
-  <div class="wrap">
-    <div class="center">
-      <span class="eyebrow">You decide</span>
-      <h2>Three ways to clean.</h2>
-      <p class="lead">Start with the recommended preset, or tune it for a single photo when you need to.</p>
+<section class="pad quick-sec" id="quick" aria-labelledby="quick-title">
+  <div class="wrap split">
+    <div class="reveal">
+      <span class="eyebrow">Quick clean</span>
+      <h2 class="title" id="quick-title">Seconds, start to finish.</h2>
+      <p class="lead">Pick the photos, keep one preset for all of them and tap once. Wipe cleans and checks every copy while you put the kettle on.</p>
+      <ol class="howto">
+        <li><span>1</span>Pick photos, videos and Live Photos</li>
+        <li><span>2</span>One preset for the whole batch. Safe to Share is the default</li>
+        <li><span>3</span>Tap Quick Clean. Verified copies are ready</li>
+      </ol>
+      <a class="cross" href="#review"><span>Want to see what’s inside first?</span><b>Full review<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></b></a>
     </div>
-    <div class="presets">
-      <div class="preset featured">
-        <span class="tag">Recommended</span>
+    <div class="tilt reveal d1">
+      <div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeQuickCleanPreview.webp" alt="Quick Clean: six items ready, Wipe Everything preset for all, one Quick Clean button" width="840" height="1741" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad review-head" id="review" aria-labelledby="review-title">
+  <div class="wrap center reveal">
+    <span class="eyebrow">Full review</span>
+    <h2 class="title" id="review-title">See everything.<br>Then decide.</h2>
+    <p class="lead">Open each photo, video or Live Photo, read what it carries in plain words and choose what goes. One preset for all of them, or a different one for each.</p>
+  </div>
+</section>
+
+<section class="scene fan stage3d" data-scene="fan" aria-labelledby="fan-title">
+  <div class="scene-pin">
+    <div class="wrap center fan-head">
+      <span class="eyebrow">Full review, step by step</span>
+      <h2 class="title" id="fan-title">Pick. Review. Share clean.</h2>
+    </div>
+    <div class="fan-stage">
+      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReviewPreview.webp" alt="Customize screen with six selected photos and videos and a preset for each" width="840" height="1741" loading="lazy"></div><figcaption><b>1 · See what’s inside</b><span>Photos, videos and Live Photos together</span></figcaption></figure>
+      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeQuickCleanPreview.webp" alt="Quick Clean screen: six items ready, Wipe Everything preset selected" width="840" height="1741" loading="lazy"></div><figcaption><b>2 · Clean and verify</b><span>Wipe checks every copy before you share</span></figcaption></figure>
+      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReadyPreview.webp" alt="Ready to share screen: six clean copies, location, time, device and author removed, quality preserved" width="840" height="1741" loading="lazy"></div><figcaption><b>3 · Share with confidence</b><span>To Photos, Files or straight to a chat</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="presets" aria-labelledby="presets-title">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Full review: three presets</span>
+      <h2 class="title" id="presets-title">Choose what goes.<br>Keep what helps.</h2>
+      <p class="lead">Start with the recommended preset, or tune it for a single photo when you need to. You see exactly what changes before you clean.</p>
+    </div>
+    <div class="grid-3 presets">
+      <article class="card preset reveal">
+        <span class="badge">Recommended</span>
         <h3>Safe to Share</h3>
         <p>Everything that identifies you or where you were.</p>
         <ul>
-          <li><span class="rm">−</span>Location</li>
-          <li><span class="rm">−</span>Capture time</li>
-          <li><span class="rm">−</span>Device, author &amp; editing apps</li>
-          <li><span class="kp">+</span>Keeps camera settings</li>
+          <li class="rm"><svg><use href="#i-x"/></svg>Location and capture time</li>
+          <li class="rm"><svg><use href="#i-x"/></svg>Device, author and editing apps</li>
+          <li class="kp"><svg><use href="#i-check"/></svg>Keeps camera settings</li>
         </ul>
-      </div>
-      <div class="preset">
+      </article>
+      <article class="card preset reveal d1">
+        <span class="badge quiet">Lightest</span>
         <h3>Location Only</h3>
         <p>Hide where it was taken, keep the rest.</p>
         <ul>
-          <li><span class="rm">−</span>GPS coordinates &amp; altitude</li>
-          <li><span class="rm">−</span>City and place names</li>
-          <li><span class="kp">+</span>Keeps date, camera &amp; author</li>
+          <li class="rm"><svg><use href="#i-x"/></svg>GPS coordinates and altitude</li>
+          <li class="rm"><svg><use href="#i-x"/></svg>City and place names</li>
+          <li class="kp"><svg><use href="#i-check"/></svg>Keeps date, camera and author</li>
         </ul>
-      </div>
-      <div class="preset">
+      </article>
+      <article class="card preset reveal d2">
+        <span class="badge quiet">Strictest</span>
         <h3>Wipe Everything</h3>
         <p>The cleanest possible copy.</p>
         <ul>
-          <li><span class="rm">−</span>All removable metadata</li>
-          <li><span class="kp">+</span>Keeps only what’s needed to display it correctly</li>
+          <li class="rm"><svg><use href="#i-x"/></svg>All removable metadata</li>
+          <li class="kp"><svg><use href="#i-check"/></svg>Keeps only what’s needed to display it correctly</li>
         </ul>
-      </div>
+      </article>
     </div>
+    <div class="center"><a class="cross" href="#quick"><span>In a hurry?</span><b>Quick clean takes seconds<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></b></a></div>
   </div>
 </section>
 
-<section class="alt" id="share">
+<section class="pad" id="export" style="background:var(--bg-2)" aria-labelledby="share-title">
   <div class="wrap split">
-    <div class="sheet" role="img" aria-label="The iOS Share Sheet with three photos selected and Wipe highlighted among the apps">
-      <div class="sheet-head">
-        <div class="stack" aria-hidden="true"><div class="scene s0"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div><div class="scene s1"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div><div class="scene s2"><div class="sun"></div><div class="ridge back"></div><div class="ridge"></div><div class="tree t1"></div><div class="tree t2"></div><div class="tree t3"></div><div class="lake"></div></div></div>
-        <div><strong>3 Photos Selected</strong><span>Options ›</span></div>
-        <span class="close" aria-hidden="true">✕</span>
-      </div>
-      <div class="apps" aria-hidden="true">
-        <div class="app"><span class="ico g1"><svg><use href="#i-share-air"/></svg></span>AirDrop</div>
-        <div class="app"><span class="ico g2"><svg><use href="#i-bubble"/></svg></span>Messages</div>
-        <div class="app wipe"><img src="assets/app-icon-128.png" alt="" width="64" height="64">Wipe</div>
-        <div class="app"><span class="ico g3"><svg><use href="#i-mail"/></svg></span>Mail</div>
-      </div>
-      <div class="sheet-actions" aria-hidden="true"><span>Copy Photos</span><span>Save to Files</span></div>
+    <div class="reveal">
+      <span class="eyebrow">Export and the Share Sheet</span>
+      <h2 class="title" id="share-title">Save it, send it, or start from Photos.</h2>
+      <p class="lead">Clean copies go to a dedicated Wipe album, to Files, or straight to a chat. And you don’t even have to open Wipe: it sits in the Share Sheet next to Messages and AirDrop.</p>
+      <ol class="howto">
+        <li><span><svg><use href="#i-images-square"/></svg></span>Save to Photos, into the Wipe album</li>
+        <li><span><svg><use href="#i-export"/></svg></span>Save to Files or share right away</li>
+        <li><span><svg><use href="#i-share-network"/></svg></span>From Photos: select, tap Share, choose Wipe</li>
+      </ol>
+      <p class="small" style="margin-top:var(--s-300)">The Wipe album means you always know which version is safe to send.</p>
     </div>
-    <div>
-      <span class="eyebrow">Quick clean</span>
-      <h2>Clean from the Share Sheet.</h2>
-      <p class="lead">Select photos in the Photos app, tap Share, choose Wipe and tap Clean. One tap, and the clean copies are ready — without opening another app.</p>
-      <p>Batches of photos, videos and Live Photos together. Clean copies go to a dedicated <strong>Wipe</strong> album, so you always know which version is safe.</p>
+    <div class="tilt reveal d1">
+      <div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeShareSheet.webp" alt="The iOS Share Sheet in Photos with Wipe listed next to Reminders and Preview" width="840" height="1741" loading="lazy"></div>
     </div>
   </div>
 </section>
 
-<section id="privacy">
-  <div class="wrap center">
-    <span class="eyebrow">Private by design</span>
-    <h2>A privacy app that keeps its word.</h2>
-    <div class="promise">
-      <div><span class="icon"><svg><use href="#i-device"/></svg></span><h3>On your iPhone</h3><p>Scanning and cleaning never leave the device.</p></div>
-      <div><span class="icon"><svg><use href="#i-noacc"/></svg></span><h3>No account</h3><p>Nothing to sign up for, nothing to log in to.</p></div>
-      <div><span class="icon"><svg><use href="#i-eye"/></svg></span><h3>No tracking</h3><p>No ads, no analytics SDK, no profiles.</p></div>
-      <div><span class="icon"><svg><use href="#i-copy"/></svg></span><h3>Originals untouched</h3><p>Wipe only ever creates new copies.</p></div>
-    </div>
-    <p style="margin-top:28px">Read the <a href="privacy/">Privacy Policy</a>.</p>
-  </div>
-</section>
-
-<section class="alt final">
+<section class="pad" id="quality" aria-labelledby="quality-title">
   <div class="wrap">
-    <img src="assets/apple-touch-icon.png" alt="Wipe app icon" width="104" height="104" loading="lazy">
-    <h2>See what your photos reveal.<br>Remove it before sharing.</h2>
-    <p class="lead" style="margin:0 auto 30px">Try your first cleans free. One-time unlock, no subscription.</p>
-    <span class="button" aria-disabled="true">Coming soon <span class="soon">to the App Store</span></span>
-    <p style="margin-top:26px">Questions? Visit <a href="support/">Support</a>.</p>
+    <div class="center reveal">
+      <span class="eyebrow">Quality preserved</span>
+      <h2 class="title" id="quality-title">Only the metadata changes.<br>Not a single pixel.</h2>
+      <p class="lead">Most metadata removers save a new, recompressed copy. Wipe rewrites only the hidden details, copies your photo and video data as it is, then checks that it really is.</p>
+    </div>
+    <div class="facts">
+      <div class="card fact reveal"><span class="big">0</span><span>pixels changed in cleaned JPEG and HEIC photos</span></div>
+      <div class="card fact reveal d1"><span class="big">1:1</span><span>video and audio streams copied bit for bit in most videos</span></div>
+      <div class="card fact reveal d2"><span class="big">Live</span><span>Live Photos stay paired and keep playing</span></div>
+      <div class="card fact reveal d3"><span class="big">HDR</span><span>HDR and Portrait data left exactly where they were</span></div>
+    </div>
+    <p class="center small" style="margin-top:var(--s-400)">When a file can’t be copied as it is, Wipe tells you before it creates a new encoded version. Never silently.</p>
   </div>
 </section>
+
+<section class="pad" id="privacy-promise" style="background:var(--bg-2)" aria-labelledby="promise-title">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Private by design</span>
+      <h2 class="title" id="promise-title">A privacy app that keeps its word.</h2>
+    </div>
+    <div class="promise">
+      <div class="reveal"><svg aria-hidden="true"><use href="#i-device-mobile"/></svg><h3>On your iPhone</h3><p>Scanning and cleaning never leave the device.</p></div>
+      <div class="reveal d1"><svg aria-hidden="true"><use href="#i-user"/></svg><h3>No account</h3><p>Nothing to sign up for, nothing to log in to.</p></div>
+      <div class="reveal d2"><svg aria-hidden="true"><use href="#i-eye-slash"/></svg><h3>No tracking</h3><p>No ads, no tracking, no profiles.</p></div>
+      <div class="reveal d3"><svg aria-hidden="true"><use href="#i-images-square"/></svg><h3>Originals untouched</h3><p>Wipe only ever creates new copies.</p></div>
+    </div>
+    <p class="center small" style="margin-top:var(--s-400)">Read the <a href="privacy/">Privacy Policy</a>.</p>
+  </div>
+</section>
+
+<section class="pad" id="pricing" aria-labelledby="pricing-title">
+  <div class="wrap center">
+    <div class="reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="title" id="pricing-title">Try it three times.<br>Then pay once.</h2>
+      <p class="lead">No subscription, no account, no ads.</p>
+    </div>
+    <div class="plans">
+      <article class="card plan reveal">
+        <h3>Free</h3>
+        <div class="price">3 <small>cleans</small></div>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Every preset and file type</li>
+          <li><svg><use href="#i-check"/></svg>Share Sheet and full review</li>
+          <li><svg><use href="#i-check"/></svg>A clean only counts when it succeeds</li>
+        </ul>
+      </article>
+      <article class="card plan pro reveal d1">
+        <h3>Wipe Pro</h3>
+        <div class="price"><svg class="icon" style="width:48px;height:48px" aria-hidden="true"><use href="#i-infinity"/></svg><span class="sr">Unlimited</span></div>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Unlimited cleaning, forever</li>
+          <li><svg><use href="#i-check"/></svg>One purchase, no subscription</li>
+          <li><svg><use href="#i-check"/></svg>Restore anytime from Settings</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="faq" style="background:var(--bg-2)" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="title" id="faq-title">Questions before you clean</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Does Wipe upload my photos?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>No. Wipe reads and cleans your photos and videos on your iPhone. Nothing is uploaded, there is no account and there are no ads.</div></details>
+      <details><summary>Will my photos lose quality?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>JPEG and HEIC photos stay pixel identical and most videos keep their original video and audio streams. If a file can’t be copied as it is, Wipe tells you and asks before creating a new encoded version.</div></details>
+      <details><summary>Are my original photos changed?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>No. Wipe creates clean copies. Your originals stay exactly as they were in your library.</div></details>
+      <details><summary>Where do the clean copies go?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Save them to Photos, where they land in a dedicated Wipe album, save them to Files, or share them straight from Wipe.</div></details>
+      <details><summary>Does it work with videos and Live Photos?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Yes. You can clean photos, videos and Live Photos together in one batch, and Live Photos stay Live Photos.</div></details>
+      <details><summary>What does Safe to Share keep?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Camera settings such as exposure, aperture and ISO. It removes location, capture time, device, author, captions and anything else that could identify you or where you were.</div></details>
+      <details><summary>How much does Wipe cost?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Your first three cleans are free. After that, one purchase unlocks Wipe for good. There is no subscription, and you can restore your purchase from Settings.</div></details>
+      <details><summary>Which iPhones does Wipe support?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Any iPhone running iOS 18 or later.</div></details>
+    </div>
+    <p class="center small" style="margin-top:var(--s-400)">Something else? <a href="support/">Visit support</a></p>
+  </div>
+</section>
+
+<section class="pad" aria-labelledby="final-title">
+  <div class="wrap">
+    <div class="final reveal">
+      <h2 class="hero-title" id="final-title">Share your photos.<br>Keep your location.</h2>
+      <p class="lead">See what your photos reveal and remove it before sharing. Your first three cleans are free, then one purchase, no subscription.</p>
+      <div class="cta-row">
+        <a class="store-badge when-live" href="https://apps.apple.com/us/search?term=Wipe%20Photo%20Metadata%20Cleaner" data-store-link><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a>
+        <span class="btn when-soon" aria-disabled="true">Coming soon to the App Store</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
-<footer class="site-footer">
+<footer class="footer">
   <div class="wrap">
-    <nav class="footer-links" aria-label="Footer"><a href="privacy/">Privacy</a><a href="support/">Support</a><a href="mailto:bashubb.dev@gmail.com">Email</a></nav>
-    <p>Made by <a href="https://bashubb.com/">bashubb</a> · For iPhone · iOS 18 or later</p>
+    <a class="brand" href="./"><img src="assets/app-icon-128.png" alt="" width="24" height="24">Wipe</a>
+    <nav aria-label="Footer">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="support/">Support</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+      <a href="mailto:bashubb.dev@gmail.com">Email</a>
+      <a href="https://bashubb.com/">More apps by bashubb</a>
+    </nav>
+    <span>For iPhone · iOS 18 or later · © 2026 bashubb</span>
   </div>
 </footer>
-<script>
-// Hero deck: each moment shows its metadata, sheds it, then shuffles to the back.
-(() => {
-  const deck = document.querySelector('.deck');
-  if (!deck) return;
-  const moments = [
-    [['i-pin', 'Tarifa, Spain · 36.01° N'], ['i-clock', 'Aug 14 · 20:41'], ['i-phone', 'iPhone 16 Pro']],
-    [['i-pin', 'Home · 52.2297° N, 21.0122° E'], ['i-clock', 'Sun · 08:12'], ['i-phone', 'iPhone 15']],
-    [['i-pin', 'Home · 50.0614° N, 19.9383° E'], ['i-clock', 'Mar 3 · 18:30'], ['i-user', 'Anna K.']],
-    [['i-pin', 'Café · 48.8566° N, 2.3522° E'], ['i-clock', 'Mon · 09:05'], ['i-wand', 'Edited in Photo editor']],
-    [['i-pin', 'Campsite · 46.5577° N, 7.9853° E'], ['i-clock', 'Jul 22 · 23:14'], ['i-phone', 'iPhone 15 Pro · Night mode']],
-    [['i-pin', 'Lisbon · 38.7223° N, 9.1393° W'], ['i-clock', 'Today · 17:48'], ['i-user', '© Jan Nowak']],
-  ];
-  const cards = [...deck.querySelectorAll('.deck-card')];
-  const chips = [...deck.querySelectorAll('.chip')];
-  let order = cards.map((_, i) => i);
-  const label = top => chips.forEach((chip, i) => {
-    const [icon, text] = moments[top][i];
-    chip.querySelector('use').setAttribute('href', '#' + icon);
-    chip.querySelector('span').textContent = text;
-  });
-  const layout = () => order.forEach((card, pos) => cards[card].dataset.pos = pos);
-  label(order[0]);
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const wait = ms => new Promise(r => setTimeout(r, ms));
-  (async function loop() {
-    for (;;) {
-      deck.classList.remove('wiping', 'cleaned');
-      await wait(1900);
-      deck.classList.add('wiping');
-      await wait(700);
-      deck.classList.add('cleaned');
-      await wait(1300);
-      const top = order.shift();
-      cards[top].dataset.pos = 'out';
-      deck.classList.remove('cleaned');
-      await wait(420);
-      order.push(top);
-      layout();
-      deck.classList.remove('wiping');
-      label(order[0]);
-      await wait(350);
-    }
-  })();
-})();
 
-// Inspector: Original / Clean copy toggle; switches once by itself when scrolled into view.
+<script src="assets/landing.js?v=1"></script>
+<script>
 (() => {
-  const inspector = document.querySelector('.inspector');
-  if (!inspector) return;
-  const buttons = inspector.querySelectorAll('[data-show]');
-  const show = state => {
-    inspector.dataset.state = state;
-    buttons.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.show === state)));
+  const L = window.Landing;
+  const reduce = L.reduceMotion();
+
+  // The motion piece: on phones in portrait use the vertical cut
+  const video = document.getElementById("motion");
+  if (matchMedia("(max-width: 640px) and (orientation: portrait)").matches) {
+    video.poster = "assets/media/wipe-motion-tall-poster.jpg";
+    video.querySelector("source").src = "assets/media/wipe-motion-tall.mp4";
+    video.load();
+  }
+  if (reduce) { video.controls = true; video.preload = "metadata"; }
+  const END = 15.3;                                   // stop before the rewind
+  const marks = [0, 7.5, 8.8, 12.7, END];            // Reveal, Wipe, Verify, Share
+  const chapters = [...document.querySelectorAll("#chapters div")];
+  const chapterBox = document.getElementById("chapters");
+  const hint = document.getElementById("hold-hint");
+  const hero = document.querySelector(".hero");
+  const card = document.getElementById("hero-card");
+
+  // Playback at normal speed once the card has landed; the progress bar follows the clip
+  let started = false, ended = false;
+  const drawProgress = () => {
+    const t = Math.min(video.currentTime, END);
+    chapters.forEach((c, i) => {
+      c.querySelector("b").style.width = (L.range(t, marks[i], marks[i + 1]) * 100).toFixed(1) + "%";
+      c.classList.toggle("on", t >= marks[i] && (t < marks[i + 1] || i === chapters.length - 1));
+    });
+    if (!video.paused) requestAnimationFrame(drawProgress);
   };
-  buttons.forEach(b => b.addEventListener('click', () => { touched = true; show(b.dataset.show); }));
-  let touched = false;
-  if (!('IntersectionObserver' in window)) return;
-  const observer = new IntersectionObserver(entries => {
-    if (!entries.some(e => e.isIntersecting)) return;
-    observer.disconnect();
-    setTimeout(() => { if (!touched) show('clean'); }, 1200);
-  }, { threshold: 0.6 });
-  observer.observe(inspector);
+  video.addEventListener("play", () => requestAnimationFrame(drawProgress));
+  video.addEventListener("timeupdate", () => {
+    if (video.currentTime >= END && !ended) { video.pause(); ended = true; release(false); }
+  });
+
+  // The hold: while it plays, scrolling down only tugs the card; a hard pull (or the end) lets go
+  const P_LAND = 0.62;                                // hero progress where the card has landed
+  let released = false, pull = 0, springTimer = 0;
+  const heroSpan = () => hero.offsetHeight - innerHeight;
+  const yLand = () => hero.offsetTop + heroSpan() * P_LAND;
+  const yEnd = () => hero.offsetTop + heroSpan();
+  const holding = () => !reduce && started && !ended && !released && scrollY >= yLand() - 4 && scrollY < yEnd() - 4;
+  const tug = (amount) => {
+    const v = 90 * (1 - Math.exp(-amount / 220));       // rubber band: gives a little, then stiffens
+    card.style.setProperty("--tug", v.toFixed(1) + "px");
+    hint.classList.toggle("on", amount > 40);
+    clearTimeout(springTimer);
+    springTimer = setTimeout(() => { pull = 0; card.style.setProperty("--tug", "0px"); hint.classList.remove("on"); }, 220);
+  };
+  function release(jump) {
+    released = true;
+    card.style.setProperty("--tug", "0px");
+    hint.classList.remove("on");
+    if (jump) scrollTo({ top: yEnd() + 2, behavior: "smooth" });
+  }
+  let last = 0;
+  addEventListener("wheel", (e) => {
+    if (e.deltaY <= 0 || !holding()) return;
+    e.preventDefault();
+    if (scrollY > yLand() + 2) scrollTo(0, yLand());
+    const now = performance.now();
+    pull = pull * Math.exp(-(now - last) / 380) + e.deltaY * (e.deltaMode === 1 ? 32 : 1);
+    last = now;
+    if (pull > 650) release(true); else tug(pull);
+  }, { passive: false });
+  let touchY = 0, touchT = 0;
+  addEventListener("touchstart", (e) => { touchY = e.touches[0].clientY; touchT = performance.now(); }, { passive: true });
+  addEventListener("touchmove", (e) => {
+    const dy = touchY - e.touches[0].clientY;
+    if (dy <= 0 || !holding()) return;
+    e.preventDefault();
+    const speed = dy / Math.max(1, performance.now() - touchT);   // px per ms
+    if (dy > 150 || speed > 0.9) release(true); else tug(dy * 3);
+  }, { passive: false });
+
+  // Hero: fly through a tunnel of shared moments; each loses its tag as it passes,
+  // and the motion piece lands at the end and plays.
+  const heroCopy = document.querySelector(".hero-copy");
+  const flies = [...document.querySelectorAll(".fly")].map((el) => ({ el, tag: el.querySelector(".ftag"), ok: el.querySelector(".fok"), x: +el.dataset.x, y: +el.dataset.y, z: +el.dataset.z, r: +el.dataset.r }));
+  const FAR = 3300;
+  L.scene("hero", (p) => {
+    if (reduce) return;
+    const q = L.range(p, 0, P_LAND / 0.82);            // tunnel part of the scroll; lands at P_LAND
+    const narrow = innerWidth < 640;
+    const cam = L.range(q, 0, 0.82) * FAR;
+    const textOut = L.range(q, 0.02, 0.16);
+    heroCopy.style.opacity = (1 - textOut).toFixed(3);
+    heroCopy.style.transform = `translateZ(${textOut * 300}px)`;
+    heroCopy.style.pointerEvents = textOut > 0.5 ? "none" : "";
+    for (const f of flies) {
+      const z = f.z + cam;
+      const fadeIn = L.range(z, -2100, -1300);
+      const fadeOut = 1 - L.range(z, 250, 650);
+      f.el.style.opacity = (fadeIn * fadeOut * (0.3 + 0.7 * textOut)).toFixed(3);
+      f.el.style.visibility = z > 700 ? "hidden" : "";
+      const xs = narrow ? f.x * 1.15 : f.x;
+      f.el.style.transform = `translate(-50%, -50%) translate3d(${xs}vw, ${f.y}vh, ${z}px) rotateY(${-xs * 0.5}deg) rotateZ(${f.r}deg)`;
+      const w = L.range(z, -700, -150);
+      f.tag.style.transform = `translate(${w * 80}px, ${w * -30}px)`;
+      f.tag.style.opacity = (1 - w).toFixed(3);
+      f.tag.style.filter = w > 0 ? `blur(${w * 8}px)` : "";
+      f.ok.style.opacity = w >= 0.9 ? 1 : 0;
+      f.ok.style.transform = `scale(${w >= 0.9 ? 1 : 0.6})`;
+    }
+    const zc = -FAR + cam;
+    const arrive = L.range(q, 0.45, 0.82);
+    card.style.opacity = L.range(q, 0.25, 0.5).toFixed(3);
+    card.style.transform = `translate(-50%, -50%) translateZ(${zc}px) rotateX(${(1 - L.ease(arrive)) * 8}deg) translateY(calc(var(--tug, 0px) * -1))`;
+    chapterBox.style.opacity = L.range(q, 0.75, 0.9).toFixed(3);
+
+    // landed: play once at normal speed; leaving the hero pauses it, coming back resumes
+    const landed = q >= 0.8;                            // cam reaches the card at q = 0.82
+    if (landed && !started) { started = true; video.currentTime = 0; video.play().catch(() => {}); }
+    if (started && !ended) {
+      if (!landed && !video.paused) video.pause();
+      if (landed && video.paused) video.play().catch(() => {});
+    }
+    if (p < 0.3) { released = false; if (ended) { ended = false; started = false; } }
+  });
+
+  // Layers: the photo turns, its metadata lifts off in depth, then gets wiped
+  const photo = document.getElementById("photo");
+  const plane = photo.querySelector(".plane");
+  const tags = [...photo.querySelectorAll(".tag")];
+  const sweep = photo.querySelector(".sweep");
+  const pill = photo.querySelector(".clean-pill");
+  const steps = [...document.querySelectorAll(".step")];
+  const bars = [...document.querySelectorAll(".progress b")];
+  tags.forEach((t) => { t.style.left = t.dataset.x + "%"; t.style.top = t.dataset.y + "%"; });
+  L.scene("layers", (p) => {
+    const step = p < 0.3 ? 0 : p < 0.58 ? 1 : 2;
+    steps.forEach((s, i) => s.classList.toggle("on", i === step));
+    bars.forEach((b, i) => { b.style.width = (L.range(p, [0, 0.3, 0.58][i], [0.3, 0.58, 0.95][i]) * 100) + "%"; });
+
+    const open = reduce ? (step >= 1 ? 1 : 0) : L.ease(L.range(p, 0.12, 0.45));
+    const close = reduce ? (step === 2 ? 1 : 0) : L.ease(L.range(p, 0.82, 0.98));
+    const turn = open * (1 - close) * (innerWidth < 640 ? 0.55 : 1);
+    photo.style.transform = reduce ? "" : `rotateY(${-34 * turn}deg) rotateX(${14 * turn}deg) translateZ(${-40 * turn}px)`;
+    plane.style.opacity = (0.9 * turn).toFixed(3);
+    plane.style.transform = `translateZ(${120 * turn}px)`;
+
+    // Wipe pass: sweep crosses, tags go one by one
+    const w = reduce ? (step === 2 ? 1 : 0) : L.range(p, 0.6, 0.86);
+    sweep.style.opacity = reduce ? 0 : (w > 0 && w < 1 ? 1 : 0);
+    sweep.style.transform = `translateX(${w * 420}%) translateZ(260px) rotate(8deg)`;
+    tags.forEach((t) => {
+      const z = +t.dataset.z * turn;
+      const i = t.dataset.wipe;
+      let gone = 0;
+      if (i !== undefined) gone = reduce ? w : L.range(w, 0.15 + i * 0.18, 0.35 + i * 0.18);
+      t.style.transform = `translateZ(${z}px) translateX(${gone * 120}px) translateY(${gone * -24}px)`;
+      t.style.opacity = (1 - gone).toFixed(3);
+      t.style.filter = gone > 0 ? `blur(${gone * 10}px)` : "";
+    });
+    const clean = w >= 0.95;
+    photo.classList.toggle("clean", clean);
+    pill.style.opacity = clean ? 1 : 0;
+    pill.style.transform = `translateX(-50%) translateZ(${40 * turn}px) translateY(${clean ? 0 : 12}px)`;
+    pill.style.transition = "opacity 600ms var(--ease), transform 600ms var(--ease)";
+  });
+
+  // Phones: a stacked deck that fans out into a row of three, ending almost flat
+  const items = [...document.querySelectorAll(".fan-item")];
+  L.scene("fan", (p) => {
+    const t = reduce ? 1 : L.ease(L.range(p, 0.08, 0.62));
+    const narrow = innerWidth < 720;
+    const w = items[1].querySelector(".iphone").offsetWidth;
+    const gap = parseFloat(getComputedStyle(items[0].parentElement).columnGap) || 0;
+    items.forEach((it, i) => {
+      const k = i - 1;
+      // desktop: cards sit in a row and start pulled into one stack; phone: cards share the centre and fan out
+      const x = narrow ? k * w * 0.62 * t : -k * (w + gap) * (1 - t);
+      const z = narrow ? -150 * Math.abs(k) * t - 120 * Math.abs(k) * (1 - t) : -160 * Math.abs(k) * (1 - t);
+      const ry = k * (-38 * (1 - t) - (narrow ? 22 : 7) * t);
+      it.style.transform = `translateX(${x}px) translateZ(${z}px) rotateY(${ry}deg) rotateX(${(1 - t) * 14}deg)`;
+      it.style.zIndex = 10 - Math.abs(k);
+      it.classList.toggle("on", t > 0.85);
+    });
+  });
+
+  // Inspector: original vs clean copy
+  const insp = document.getElementById("inspector");
+  insp.querySelectorAll("[data-show]").forEach((b) => b.addEventListener("click", () => {
+    insp.dataset.state = b.dataset.show;
+    insp.querySelectorAll("[data-show]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+  }));
+  const autoIO = new IntersectionObserver((es) => es.forEach((e) => {
+    if (!e.isIntersecting || reduce) return;
+    autoIO.disconnect();
+    setTimeout(() => { if (insp.dataset.state === "original") insp.querySelector('[data-show="clean"]').click(); }, 1800);
+  }), { threshold: 0.6 });
+  autoIO.observe(insp);
 })();
 </script>
 </body>
