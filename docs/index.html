@@ -23,8 +23,8 @@
 <link rel="icon" href="assets/fav/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/fav/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/landing.css?v=9">
-<link rel="stylesheet" href="assets/wipe.css?v=12">
+<link rel="stylesheet" href="assets/landing.css?v=10">
+<link rel="stylesheet" href="assets/wipe.css?v=13">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -459,7 +459,7 @@
   </div>
 </footer>
 
-<script src="assets/landing.js?v=9"></script>
+<script src="assets/landing.js?v=11"></script>
 <script>
 (() => {
   const L = window.Landing;
@@ -549,7 +549,7 @@
     const cam = L.range(q, 0, 0.82) * FAR;
     const textOut = L.range(q, 0.02, 0.16);
     heroCopy.style.opacity = (1 - textOut).toFixed(3);
-    heroCopy.style.transform = `translateZ(${textOut * 300}px)`;
+    heroCopy.style.transform = `translate3d(0, 0, ${textOut * 300}px)`;
     heroCopy.style.pointerEvents = textOut > 0.5 ? "none" : "";
     for (const f of flies) {
       const z = f.z + cam;
@@ -560,9 +560,8 @@
       const xs = narrow ? f.x * 1.15 : f.x;
       f.el.style.transform = `translate(-50%, -50%) translate3d(${xs}vw, ${f.y}vh, ${z}px) rotateY(${-xs * 0.5}deg) rotateZ(${f.r}deg)`;
       const w = L.range(z, -700, -150);
-      f.tag.style.transform = `translate(${w * 80}px, ${w * -30}px)`;
+      f.tag.style.transform = `translate3d(${w * 80}px, ${w * -30}px, 0) scale(${1 - w * 0.3})`;
       f.tag.style.opacity = (1 - w).toFixed(3);
-      f.tag.style.filter = w > 0 ? `blur(${w * 8}px)` : "";
       f.ok.style.opacity = w >= 0.9 ? 1 : 0;
       f.ok.style.transform = `scale(${w >= 0.9 ? 1 : 0.6})`;
     }
@@ -614,7 +613,6 @@
       if (i !== undefined) gone = reduce ? w : L.range(w, 0.15 + i * 0.18, 0.35 + i * 0.18);
       t.style.transform = `translateZ(${z}px) translateX(${gone * 120}px) translateY(${gone * -24}px)`;
       t.style.opacity = (1 - gone).toFixed(3);
-      t.style.filter = gone > 0 ? `blur(${gone * 10}px)` : "";
     });
     const clean = w >= 0.95;
     photo.classList.toggle("clean", clean);

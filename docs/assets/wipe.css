@@ -200,7 +200,7 @@
 /* Share sheet split */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-800); align-items: center; }
 @media (max-width: 900px) { .split { grid-template-columns: 1fr; gap: var(--s-600); } }
-.tilt { perspective: 1200px; display: grid; place-items: center; }
+.tilt { perspective: 2600px; perspective-origin: 50% 50%; display: grid; place-items: center; }
 .howto { margin: var(--s-400) 0 0; padding: 0; list-style: none; display: grid; gap: var(--s-200); }
 .howto li { display: flex; gap: var(--s-200); align-items: center; font-weight: 600; }
 .howto li span { display: inline-flex; width: 32px; height: 32px; flex: none; align-items: center; justify-content: center; border-radius: 9999px; background: var(--accent); color: var(--on-accent); font-size: 14px; }
@@ -292,7 +292,7 @@ html { scroll-padding-top: 96px; }
 
 
 /* Phone mockups in cards stand up as the card comes into view: no roll, no skew, never cropped at the sides */
-.way-phone { margin-top: auto; height: 300px; display: flex; justify-content: center; perspective: 1400px; clip-path: inset(-120px -120px 0 -120px); }
+.way-phone { margin-top: auto; height: 300px; display: flex; justify-content: center; perspective: 2600px; perspective-origin: 50% 85%; clip-path: inset(-120px -120px 0 -120px); }
 .way-phone .iphone { --w: 240px; margin-top: var(--s-300); transform-origin: 50% 100%; transform: translateY(48px) rotateX(28deg); opacity: 0.5;
   transition: transform 1400ms var(--ease) 150ms, opacity 900ms var(--ease) 150ms; }
 .way.in .way-phone .iphone { transform: none; opacity: 1; }
@@ -302,3 +302,7 @@ html { scroll-padding-top: 96px; }
 .tilt .iphone { --w: min(300px, 64vw); transform-origin: 50% 100%; transform: translateY(48px) rotateX(28deg); opacity: 0.5; transition: transform 1400ms var(--ease) 150ms, opacity 900ms var(--ease) 150ms; }
 .tilt.in .iphone { transform: rotateY(-10deg); opacity: 1; }
 @media (max-width: 720px) { .tilt.in .iphone { transform: none; } }
+
+/* Smooth hero on phones: moving photos without live shadows, layers promoted once */
+.fly, .ftag, .hero-card, .hero-copy, .photo-obj .tag { will-change: transform, opacity; }
+@media (pointer: coarse) { .fly { box-shadow: none; } .hero-card { box-shadow: 0 24px 48px -24px rgba(23, 33, 31, 0.45); } .sweep { filter: none; } }
