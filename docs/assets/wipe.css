@@ -302,3 +302,22 @@ html { scroll-padding-top: 96px; }
   .way-phone { height: auto; aspect-ratio: 1.15; perspective: none; }
   .way-phone .iphone, .way + .way .way-phone .iphone, .way:hover .way-phone .iphone { --w: min(58vw, 260px); transform: none; }
 }
+
+/* Phones */
+.wm-hero { padding: calc(112px + env(safe-area-inset-top, 0px)) 0 var(--s-500); text-align: center; }
+.wm-hero .hero-title, .wm-hero .lead { margin-inline: auto; }
+.wm-hero .cta-row { justify-content: center; }
+.wm-film { margin: var(--s-500) auto 0; width: min(100% - 2 * var(--gutter), 64svh * 0.5625); aspect-ratio: 9 / 16; border-radius: 28px; overflow: hidden; box-shadow: 0 32px 64px -32px rgba(23, 33, 31, 0.45); }
+.wm-film video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.wm-layers { padding: var(--s-700) 0; text-align: center; }
+.wm-photo { position: relative; width: min(64vw, 260px); margin: var(--s-500) auto var(--s-400); aspect-ratio: 3 / 4; padding: 8px; border-radius: 16px; background: #fff; box-shadow: 0 24px 48px -24px rgba(23, 33, 31, 0.45); }
+.wm-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+.wm-photo .tag { position: absolute; font-size: 12px; line-height: 16px; padding: var(--s-50) var(--s-75) var(--s-50) var(--s-50); }
+.wm-photo .tag .ic { width: 24px; height: 24px; }
+.wm-steps { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--s-300); text-align: left; counter-reset: s; }
+.wm-steps li { counter-increment: s; position: relative; padding-left: var(--s-500); color: var(--muted); }
+.wm-steps li::before { content: counter(s); position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 9999px; background: var(--accent); color: var(--on-accent); font-size: 14px; font-weight: 700; }
+.wm-steps b { display: block; color: var(--text); }
+.wm-fan figure { margin: 0; width: 66vw; max-width: 280px; text-align: center; }
+.wm-fan figcaption { margin-top: var(--s-200); font-size: 14px; line-height: 20px; color: var(--muted); }
+.wm-fan figcaption b { display: block; color: var(--text); font-size: 16px; line-height: 24px; }
