@@ -24,7 +24,7 @@
 <link rel="apple-touch-icon" href="assets/fav/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/landing.css?v=21">
-<link rel="stylesheet" href="assets/wipe.css?v=21">
+<link rel="stylesheet" href="assets/wipe.css?v=40">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -159,43 +159,6 @@
   </div>
 </section>
 
-<section class="pad" id="reveals" aria-labelledby="reveals-title">
-  <div class="wrap split">
-    <div class="reveal">
-      <span class="eyebrow">What’s hidden</span>
-      <h2 class="title" id="reveals-title">Your photo says more than you think.</h2>
-      <p class="lead">Metadata is invisible in the picture but travels with the file to chats, email, marketplaces and cloud folders. Wipe finds it and explains it in plain language.</p>
-      <div class="reveal-list">
-        <div><svg aria-hidden="true"><use href="#i-map-pin"/></svg><b>Exact location</b><span>GPS coordinates down to your street, home or workplace.</span></div>
-        <div><svg aria-hidden="true"><use href="#i-clock"/></svg><b>Capture time</b><span>The exact date and minute the moment happened.</span></div>
-        <div><svg aria-hidden="true"><use href="#i-device-mobile"/></svg><b>Device and lens</b><span>Your phone model, camera and lens details.</span></div>
-        <div><svg aria-hidden="true"><use href="#i-user"/></svg><b>Author and copyright</b><span>Names and ownership fields added by apps.</span></div>
-        <div><svg aria-hidden="true"><use href="#i-magic-wand"/></svg><b>Editing apps</b><span>Which software touched the file, and when.</span></div>
-        <div><svg aria-hidden="true"><use href="#i-text-align-left"/></svg><b>Captions and keywords</b><span>Descriptions and tags you may have forgotten.</span></div>
-      </div>
-    </div>
-    <div class="inspector reveal d1" id="inspector" data-state="original">
-      <div class="insp-head">
-        <img src="assets/moments/camp.svg" alt="" width="56" height="56">
-        <div><strong>IMG_4821.HEIC</strong><span>Photo · 12 MP</span></div>
-      </div>
-      <div class="seg" role="group" aria-label="Show metadata of">
-        <button type="button" data-show="original" aria-pressed="true">Original</button>
-        <button type="button" data-show="clean" aria-pressed="false">Clean copy</button>
-      </div>
-      <ul class="fields">
-        <li class="rm" style="--i:0"><svg aria-hidden="true"><use href="#i-map-pin"/></svg><span class="k">Location</span><span class="v">50.0614° N, 19.9383° E</span><span class="gone">Removed</span></li>
-        <li class="rm" style="--i:1"><svg aria-hidden="true"><use href="#i-clock"/></svg><span class="k">Captured</span><span class="v">May 12, 2024 · 10:32</span><span class="gone">Removed</span></li>
-        <li class="rm" style="--i:2"><svg aria-hidden="true"><use href="#i-device-mobile"/></svg><span class="k">Device</span><span class="v">iPhone 15 Pro · 24 mm</span><span class="gone">Removed</span></li>
-        <li class="rm" style="--i:3"><svg aria-hidden="true"><use href="#i-user"/></svg><span class="k">Author</span><span class="v">Maya Okafor</span><span class="gone">Removed</span></li>
-        <li class="rm" style="--i:4"><svg aria-hidden="true"><use href="#i-magic-wand"/></svg><span class="k">Edited with</span><span class="v">Photo editor 9.2</span><span class="gone">Removed</span></li>
-        <li class="keep" style="--i:5"><svg aria-hidden="true"><use href="#i-check"/></svg><span class="k">Camera</span><span class="v">1/120 s · ƒ1.8 · ISO 100</span><span class="gone">Kept</span></li>
-      </ul>
-      <div class="insp-foot"><span class="when-original">5 details can identify you</span><span class="when-clean"><svg aria-hidden="true"><use href="#i-check-circle"/></svg>Safe to Share · quality preserved</span></div>
-    </div>
-  </div>
-</section>
-
 <section class="tagline-band" aria-label="Wipe in one line">
   <div class="wrap">
     <p class="tagline" data-tagline>Share photos. <span class="hl">Not your data.</span><br>Nothing leaves your iPhone and your originals never change.</p>
@@ -207,36 +170,23 @@
     <div class="center reveal">
       <span class="eyebrow">Two ways to clean</span>
       <h2 class="title" id="modes-title">From Photos in five seconds.<br>Or in Wipe, one photo at a time.</h2>
-      <p class="lead">Use Quick clean when you just want to send. Use Full review when you need to know exactly what leaves your phone.</p>
-    </div>
+          </div>
     <div class="ways">
       <article class="way quick reveal">
         <div class="way-head">
           <span class="way-ic"><svg aria-hidden="true"><use href="#i-lightning"/></svg></span>
           <div><h3>Quick clean</h3><span class="way-time">In Photos · about 5 seconds</span></div>
         </div>
-        <ol class="way-steps">
-          <li><span>1</span>Select photos and videos in Photos</li>
-          <li><span>2</span>Tap Share, then Wipe</li>
-          <li><span>3</span>One preset cleans the whole batch</li>
-        </ol>
-        <p class="way-best"><b>Best for</b> sending a few photos right now, without opening Wipe.</p>
+        <p class="way-best">Select photos, tap Share, then Wipe. One preset cleans the whole batch. Best for sending a few photos right now.</p>
         <a class="way-link" href="#quick">How Quick clean works<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-        <div class="way-phone"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeQuickCleanPreview.webp" alt="Quick Clean: six items ready, one preset for every item, one Quick Clean button" width="840" height="1741" loading="lazy"></div></div>
       </article>
       <article class="way review reveal d1">
         <div class="way-head">
           <span class="way-ic"><svg aria-hidden="true"><use href="#i-magnifying-glass-plus"/></svg></span>
           <div><h3>Full review</h3><span class="way-time">In Wipe · as long as you want</span></div>
         </div>
-        <ol class="way-steps">
-          <li><span>1</span>See every field: coordinates, time, device, author</li>
-          <li><span>2</span>Choose a preset for each photo, or one for all</li>
-          <li><span>3</span>Get a verified report before you share</li>
-        </ol>
-        <p class="way-best"><b>Best for</b> listings, documents and anything you need to be sure about.</p>
+        <p class="way-best">See every field, choose what goes photo by photo, get a verified report. Best for listings and documents.</p>
         <a class="way-link" href="#review">How Full review works<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
-        <div class="way-phone"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeItemDetailsPreview.webp" alt="Location details of a video: exact coordinates that will be removed" width="840" height="1741" loading="lazy"></div></div>
       </article>
     </div>
   </div>
@@ -594,18 +544,6 @@
     });
   });
 
-  // Inspector: original vs clean copy
-  const insp = document.getElementById("inspector");
-  insp.querySelectorAll("[data-show]").forEach((b) => b.addEventListener("click", () => {
-    insp.dataset.state = b.dataset.show;
-    insp.querySelectorAll("[data-show]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
-  }));
-  const autoIO = new IntersectionObserver((es) => es.forEach((e) => {
-    if (!e.isIntersecting || reduce) return;
-    autoIO.disconnect();
-    setTimeout(() => { if (insp.dataset.state === "original") insp.querySelector('[data-show="clean"]').click(); }, 1800);
-  }), { threshold: 0.6 });
-  autoIO.observe(insp);
 
 })();
 </script>

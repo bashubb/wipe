@@ -351,3 +351,9 @@ html { scroll-padding-top: 96px; }
   .ways { gap: var(--s-200); }
   .way-steps li { font-size: 14px; line-height: 20px; }
 }
+
+/* the two modes are a short chooser; details live in their own sections */
+.way { padding-bottom: var(--s-500); gap: var(--s-200); }
+.way.quick .way-best { color: #234a3e; }
+.way-best { font-size: 16px; line-height: 24px; }
+@media (max-width: 480px) { .way { padding-bottom: var(--s-300); } }
