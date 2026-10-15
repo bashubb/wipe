@@ -24,7 +24,7 @@
 <link rel="apple-touch-icon" href="assets/fav/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/landing.css?v=21">
-<link rel="stylesheet" href="assets/wipe.css?v=20">
+<link rel="stylesheet" href="assets/wipe.css?v=21">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -526,7 +526,7 @@
     chapterBox.style.opacity = L.range(q, 0.75, 0.9).toFixed(3);
 
     // landed: play once at normal speed; leaving the hero pauses it, coming back resumes
-    const landed = q >= 0.8;                            // cam reaches the card at q = 0.82
+    const landed = q >= (PHONE ? 0.55 : 0.8);           // phones: start the piece as soon as the card is in view
     if (landed && !started) { started = true; video.currentTime = 0; video.play().catch(() => {}); }
     if (started && !ended) {
       if (!landed && !video.paused) video.pause();

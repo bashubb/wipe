@@ -54,7 +54,7 @@
 .hold-hint.on { opacity: 1; transform: translate(-50%, 0); }
 .chapters span { font-size: 12px; line-height: 16px; font-weight: 600; color: var(--muted); transition: color var(--dur) var(--ease); }
 .chapters .on span { color: var(--text); }
-@media (max-width: 640px) { .hero { height: 420vh; } .hero-copy { padding-top: var(--s-400); } }
+@media (max-width: 640px) { .hero { height: 300vh; } .hero-copy { padding-top: var(--s-400); } }
 @media (max-width: 640px) and (orientation: portrait) { .hero-card { aspect-ratio: 9 / 16; width: min(80vw, calc((100svh - 140px) * 0.5625)); } }
 
 /* Layers scene */
@@ -327,3 +327,27 @@ html { scroll-padding-top: 96px; }
 .wm-facts li { padding: var(--s-200) var(--s-100); border-radius: 16px; background: var(--surface); border: 1px solid var(--line); font-size: 12px; line-height: 16px; color: var(--muted); text-align: center; }
 .wm-facts b { display: block; font-size: 24px; line-height: 32px; color: var(--accent-text); }
 .wm-price { margin-top: var(--s-300); text-align: center; }
+
+/* ===== Phones: same scenes, tighter content ===== */
+@media (max-width: 720px) {
+  .reveal-list { grid-template-columns: 1fr 1fr; gap: var(--s-100); }
+  .reveal-list div { grid-template-columns: 20px 1fr; padding: var(--s-100); border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+  .reveal-list span { display: none; }
+  .reveal-list b { font-size: 14px; line-height: 20px; }
+  #reveals .split { gap: var(--s-400); }
+  .tagline-band .tagline { font-size: 30px; line-height: 36px; }
+  .grid-3.presets { display: flex; gap: var(--s-100); overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: calc(var(--gutter) * -1); padding: 0 var(--gutter) var(--s-100); scrollbar-width: none; }
+  .grid-3.presets::-webkit-scrollbar { display: none; }
+  .grid-3.presets .preset { flex: none; width: 78vw; scroll-snap-align: center; }
+  .facts { grid-template-columns: 1fr 1fr; gap: var(--s-100); }
+  .fact { padding: var(--s-200); }
+  .fact .big { font-size: 30px; line-height: 36px; }
+  .fact span { font-size: 12px; line-height: 16px; }
+  .plans { grid-template-columns: 1fr 1fr; gap: var(--s-100); }
+  .plan { padding: var(--s-200); gap: var(--s-100); }
+  .plan .price { font-size: 30px; }
+  .plan li { font-size: 12px; line-height: 16px; }
+  .plan li svg { width: 14px; height: 14px; margin-top: 1px; }
+  .ways { gap: var(--s-200); }
+  .way-steps li { font-size: 14px; line-height: 20px; }
+}
