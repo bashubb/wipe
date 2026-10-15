@@ -357,3 +357,7 @@ html { scroll-padding-top: 96px; }
 .way.quick .way-best { color: #234a3e; }
 .way-best { font-size: 16px; line-height: 24px; }
 @media (max-width: 480px) { .way { padding-bottom: var(--s-300); } }
+
+/* card phones always stand upright: no lying-down start state */
+.way-phone { perspective: none !important; }
+.way-phone .iphone, .tilt .iphone { transform: none !important; opacity: 1 !important; }
