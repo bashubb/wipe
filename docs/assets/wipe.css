@@ -281,7 +281,6 @@
 .cross:active { transform: scale(0.98); }
 .howto li span svg { width: 16px; height: 16px; }
 .review-head { padding-bottom: 0; background: var(--bg); }
-html { scroll-padding-top: 96px; }
 
 
 
