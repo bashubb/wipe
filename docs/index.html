@@ -23,8 +23,8 @@
 <link rel="icon" href="assets/fav/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/fav/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/landing.css?v=21">
-<link rel="stylesheet" href="assets/wipe.css?v=44">
+<link rel="stylesheet" href="assets/landing.css?v=41">
+<link rel="stylesheet" href="assets/wipe.css?v=50">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -80,6 +80,12 @@
 </div>
 
 <main id="main">
+<section class="m-only film-intro" data-film-intro aria-label="Wipe in 16 seconds: what a photo reveals, and how Wipe removes it">
+  <video muted playsinline preload="auto" data-end="15.3" data-tall="assets/media/wipe-motion-tall.mp4" data-tall-poster="assets/media/wipe-motion-tall-poster.jpg" data-wide="assets/media/wipe-motion.mp4" data-wide-poster="assets/media/wipe-motion-poster.jpg" aria-label="A sponge wipes location, time, device and author tags off a family photo; the photo itself stays the same"></video>
+  <button class="film-intro-skip" type="button">Skip</button>
+  <div class="film-intro-ui" aria-hidden="true"><span class="film-intro-hint">Swipe up hard to skip</span><span class="film-intro-bar"><b></b></span></div>
+</section>
+
 <section class="scene hero stage3d" data-scene="hero" aria-labelledby="hero-title">
   <div class="scene-pin">
     <div class="hero-copy wrap">
@@ -119,7 +125,7 @@
   </div>
 </section>
 
-<section class="scene layers stage3d" id="layers" data-scene="layers" aria-labelledby="layers-title">
+<section class="scene layers stage3d d-only" id="layers" data-scene="layers" aria-labelledby="layers-title">
   <div class="scene-pin">
     <div class="wrap layers-grid">
       <div>
@@ -156,6 +162,26 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="m-only m-sec" id="layers-m" aria-labelledby="layers-m-title">
+  <div class="m-car" data-carousel="5500">
+    <div class="m-track">
+      <div class="m-slide wl" data-state="0">
+        <div class="m-vis"><div class="wl-photo" aria-hidden="true"><div class="print"><img src="assets/moments/beach.svg" alt="" width="300" height="400"></div><span class="tag" style="left:-26%;top:6%;--o:0"><span class="ic"><svg><use href="#i-map-pin"/></svg></span><span><small>LOCATION</small>50.0614, 19.9383</span></span><span class="tag" style="left:54%;top:24%;--o:1"><span class="ic"><svg><use href="#i-clock"/></svg></span><span><small>TIME</small>Jun 14 · 6:42 PM</span></span><span class="tag" style="left:-28%;top:52%;--o:2"><span class="ic"><svg><use href="#i-device-mobile"/></svg></span><span><small>DEVICE</small>iPhone 17 Pro</span></span><span class="tag" style="left:50%;top:62%;--o:3"><span class="ic"><svg><use href="#i-user"/></svg></span><span><small>AUTHOR</small>Maya Okafor</span></span><span class="tag keep" style="left:-18%;top:76%;--o:4"><span class="ic"><svg><use href="#i-check"/></svg></span><span><small>CAMERA</small>ƒ1.8 · 1/120 s<span class="kept">Kept</span></span></span><span class="clean-pill"><svg><use href="#i-check-circle"/></svg>Clean · 0 tags left</span></div></div>
+        <div class="m-txt"><span class="num">1</span><h2 class="title" id="layers-m-title">Every photo has a second layer.</h2><p class="lead">Your iPhone writes where, when and with what into the file. You never see it. Everyone you send it to can.</p></div>
+      </div>
+      <div class="m-slide wl" data-state="1">
+        <div class="m-vis"><div class="wl-photo" aria-hidden="true"><div class="print"><img src="assets/moments/beach.svg" alt="" width="300" height="400"></div><span class="tag" style="left:-26%;top:6%;--o:0"><span class="ic"><svg><use href="#i-map-pin"/></svg></span><span><small>LOCATION</small>50.0614, 19.9383</span></span><span class="tag" style="left:54%;top:24%;--o:1"><span class="ic"><svg><use href="#i-clock"/></svg></span><span><small>TIME</small>Jun 14 · 6:42 PM</span></span><span class="tag" style="left:-28%;top:52%;--o:2"><span class="ic"><svg><use href="#i-device-mobile"/></svg></span><span><small>DEVICE</small>iPhone 17 Pro</span></span><span class="tag" style="left:50%;top:62%;--o:3"><span class="ic"><svg><use href="#i-user"/></svg></span><span><small>AUTHOR</small>Maya Okafor</span></span><span class="tag keep" style="left:-18%;top:76%;--o:4"><span class="ic"><svg><use href="#i-check"/></svg></span><span><small>CAMERA</small>ƒ1.8 · 1/120 s<span class="kept">Kept</span></span></span><span class="clean-pill"><svg><use href="#i-check-circle"/></svg>Clean · 0 tags left</span></div></div>
+        <div class="m-txt"><span class="num">2</span><h2 class="title">Wipe pulls it apart.</h2><p class="lead">Location, capture time, device, author and editing apps, explained in plain words before anything changes.</p></div>
+      </div>
+      <div class="m-slide wl" data-state="2">
+        <div class="m-vis"><div class="wl-photo" aria-hidden="true"><div class="print"><img src="assets/moments/beach.svg" alt="" width="300" height="400"></div><span class="tag" style="left:-26%;top:6%;--o:0"><span class="ic"><svg><use href="#i-map-pin"/></svg></span><span><small>LOCATION</small>50.0614, 19.9383</span></span><span class="tag" style="left:54%;top:24%;--o:1"><span class="ic"><svg><use href="#i-clock"/></svg></span><span><small>TIME</small>Jun 14 · 6:42 PM</span></span><span class="tag" style="left:-28%;top:52%;--o:2"><span class="ic"><svg><use href="#i-device-mobile"/></svg></span><span><small>DEVICE</small>iPhone 17 Pro</span></span><span class="tag" style="left:50%;top:62%;--o:3"><span class="ic"><svg><use href="#i-user"/></svg></span><span><small>AUTHOR</small>Maya Okafor</span></span><span class="tag keep" style="left:-18%;top:76%;--o:4"><span class="ic"><svg><use href="#i-check"/></svg></span><span><small>CAMERA</small>ƒ1.8 · 1/120 s<span class="kept">Kept</span></span></span><span class="clean-pill"><svg><use href="#i-check-circle"/></svg>Clean · 0 tags left</span></div></div>
+        <div class="m-txt"><span class="num">3</span><h2 class="title">Then wipes what gives you away.</h2><p class="lead">Pick a preset. Wipe removes those details and checks every copy again before you can share it.</p></div>
+      </div>
+    </div>
+    <div class="m-dots"></div>
   </div>
 </section>
 
@@ -211,7 +237,7 @@
   </div>
 </section>
 
-<section class="scene fan stage3d" id="review" data-scene="fan" aria-labelledby="fan-title">
+<section class="scene fan stage3d d-only" id="review" data-scene="fan" aria-labelledby="fan-title">
   <div class="scene-pin">
     <div class="wrap center fan-head">
       <span class="eyebrow">Full review</span>
@@ -222,11 +248,30 @@
       <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeQuickCleanPreview.webp" alt="Quick Clean screen: six items ready, Wipe Everything preset selected" width="840" height="1741" loading="lazy"></div><figcaption><b>2 · Read every field</b><span>And pick what goes, photo by photo</span></figcaption></figure>
       <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReadyPreview.webp" alt="Ready to share screen: six clean copies, location, time, device and author removed, quality preserved" width="840" height="1741" loading="lazy"></div><figcaption><b>3 · Get the report</b><span>Every copy verified before you share</span></figcaption></figure>
     </div>
-    <div class="fan-cap" aria-hidden="true">
-      <p><b>1 · Open the batch</b><span>Photos, videos and Live Photos together</span></p>
-      <p><b>2 · Read every field</b><span>And pick what goes, photo by photo</span></p>
-      <p><b>3 · Get the report</b><span>Every copy verified before you share</span></p>
+  </div>
+</section>
+
+<section class="m-only m-sec" id="review-m" aria-labelledby="review-m-title">
+  <div class="wrap center m-head">
+    <span class="eyebrow">Full review</span>
+    <h2 class="title" id="review-m-title">See everything. Then decide.</h2>
+  </div>
+  <div class="m-car" data-carousel="4500">
+    <div class="m-track">
+      <figure class="m-slide">
+        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReviewPreview.webp" alt="Customize screen with six selected photos and videos and a preset for each" width="840" height="1741" loading="lazy"></div></div>
+        <figcaption class="m-txt"><h3>1 · Open the batch</h3><p class="lead">Photos, videos and Live Photos together</p></figcaption>
+      </figure>
+      <figure class="m-slide">
+        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeQuickCleanPreview.webp" alt="Quick Clean screen: six items ready, Wipe Everything preset selected" width="840" height="1741" loading="lazy"></div></div>
+        <figcaption class="m-txt"><h3>2 · Read every field</h3><p class="lead">And pick what goes, photo by photo</p></figcaption>
+      </figure>
+      <figure class="m-slide">
+        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReadyPreview.webp" alt="Ready to share screen: six clean copies, location, time, device and author removed, quality preserved" width="840" height="1741" loading="lazy"></div></div>
+        <figcaption class="m-txt"><h3>3 · Get the report</h3><p class="lead">Every copy verified before you share</p></figcaption>
+      </figure>
     </div>
+    <div class="m-dots"></div>
   </div>
 </section>
 
@@ -368,19 +413,16 @@
   </div>
 </footer>
 
-<script src="assets/landing.js?v=20"></script>
+<script src="assets/landing.js?v=41"></script>
 <script>
 (() => {
   const L = window.Landing;
   const reduce = L.reduceMotion();
 
-  // The motion piece: on phones in portrait use the vertical cut
+  // The motion piece
   const video = document.getElementById("motion");
-  if (matchMedia("(max-width: 640px) and (orientation: portrait)").matches) {
-    video.poster = "assets/media/wipe-motion-tall-poster.jpg";
-    video.querySelector("source").src = "assets/media/wipe-motion-tall.mp4";
-    video.load();
-  }
+  // Phones open with the film (the film-intro section); the hero card is desktop only, so it loads nothing there
+  if (L.phone) { video.querySelector("source").remove(); video.removeAttribute("poster"); video.load(); }
   if (reduce) { video.controls = true; video.preload = "metadata"; }
   const END = 15.3;                                   // stop before the rewind
   const marks = [0, 7.5, 8.8, 12.7, END];            // Reveal, Wipe, Verify, Share
@@ -411,8 +453,7 @@
   const heroSpan = () => hero.offsetHeight - innerHeight;
   const yLand = () => hero.offsetTop + heroSpan() * P_LAND;
   const yEnd = () => hero.offsetTop + heroSpan();
-  const PHONE = matchMedia("(max-width: 720px)").matches;
-  const holding = () => !PHONE && !reduce && started && !ended && !released && scrollY >= yLand() - 4 && scrollY < yEnd() - 4;
+  const holding = () => !L.phone && !reduce && started && !ended && !released && scrollY >= yLand() - 4 && scrollY < yEnd() - 4;
   const tug = (amount) => {
     const v = 90 * (1 - Math.exp(-amount / 220));       // rubber band: gives a little, then stiffens
     card.style.setProperty("--tug", v.toFixed(1) + "px");
@@ -454,7 +495,6 @@
   L.scene("hero", (p) => {
     if (reduce) return;
     const q = L.range(p, 0, P_LAND / 0.82);            // tunnel part of the scroll; lands at P_LAND
-    const narrow = innerWidth < 640;
     const cam = L.range(q, 0, 0.82) * FAR;
     const textOut = L.range(q, 0.02, 0.16);
     heroCopy.style.opacity = (1 - textOut).toFixed(3);
@@ -464,9 +504,10 @@
       const z = f.z + cam;
       const fadeIn = L.range(z, -2100, -1300);
       const fadeOut = 1 - L.range(z, 250, 650);
-      f.el.style.opacity = (fadeIn * fadeOut * (0.3 + 0.7 * textOut)).toFixed(3);
-      f.el.style.visibility = z > 700 ? "hidden" : "";
-      const xs = narrow ? f.x * 0.72 : f.x, ys = narrow ? f.y * 1.3 : f.y;
+      const op = fadeIn * fadeOut * (0.3 + 0.7 * textOut);
+      f.el.style.opacity = op.toFixed(3);
+      f.el.style.visibility = z > 700 || op < 0.01 ? "hidden" : "";
+      const xs = f.x, ys = f.y;
       f.el.style.transform = `translate(-50%, -50%) translate3d(${xs}vw, ${ys}vh, ${z}px) rotateY(${-xs * 0.5}deg) rotateZ(${f.r}deg)`;
       const w = L.range(z, -700, -150);
       f.tag.style.transform = `translate3d(${w * 80}px, ${w * -30}px, 0) scale(${1 - w * 0.3})`;
@@ -481,7 +522,7 @@
     chapterBox.style.opacity = L.range(q, 0.75, 0.9).toFixed(3);
 
     // landed: play once at normal speed; leaving the hero pauses it, coming back resumes
-    const landed = q >= (PHONE ? 0.55 : 0.8);           // phones: start the piece as soon as the card is in view
+    const landed = q >= 0.8;
     if (landed && !started) { started = true; video.currentTime = 0; video.play().catch(() => {}); }
     if (started && !ended) {
       if (!landed && !video.paused) video.pause();
@@ -530,34 +571,11 @@
     pill.style.transition = "opacity 600ms var(--ease), transform 600ms var(--ease)";
   });
 
-  // Desktop: a stacked deck that fans out into a row of three, ending almost flat.
-  // Phones: the deck fans out, then scrolling brings each phone to the front in turn, with its caption below.
+  // A stacked deck that fans out into a row of three, ending almost flat
   const items = [...document.querySelectorAll(".fan-item")];
-  const caps = [...document.querySelectorAll(".fan-cap p")];
   L.scene("fan", (p) => {
-    const narrow = innerWidth < 720;
-    const w = items[1].querySelector(".iphone").offsetWidth;
-    if (narrow) {
-      const t = reduce ? 1 : L.ease(L.range(p, 0.04, 0.3));
-      const raw = reduce ? 1 : L.range(p, 0.3, 0.92) * 2;          // which phone is in front, 0…2
-      const k0 = Math.min(1, Math.floor(raw));
-      const f = k0 + L.ease(L.range(raw - k0, 0.3, 0.7));
-      const focus = reduce ? 1 : f;
-      const step = Math.min(w * 0.7, (innerWidth - w) / 2 - 4);
-      items.forEach((it, i) => {
-        const d = i - focus;                                         // distance from the front slot
-        const ad = Math.min(1.4, Math.abs(d));
-        const x = Math.sign(d) * Math.min(Math.abs(d), 1.1) * step * t;   // the far phone tucks in behind its neighbour
-        const z = (-170 * ad) * t - 120 * Math.abs(i - 1) * (1 - t);
-        const ry = (-d * 24) * t + (i - 1) * -20 * (1 - t);
-        it.style.transform = `translateX(${x}px) translateZ(${z}px) rotateY(${ry}deg) rotateX(${(1 - t) * 14}deg)`;
-        it.style.zIndex = Math.round(10 - ad * 4);
-      });
-      const on = Math.round(focus);
-      caps.forEach((c, i) => c.classList.toggle("on", t > 0.6 && i === on));
-      return;
-    }
     const t = reduce ? 1 : L.ease(L.range(p, 0.08, 0.62));
+    const w = items[1].querySelector(".iphone").offsetWidth;
     const gap = parseFloat(getComputedStyle(items[0].parentElement).columnGap) || 0;
     items.forEach((it, i) => {
       const k = i - 1;
