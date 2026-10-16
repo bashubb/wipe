@@ -357,3 +357,11 @@ html { scroll-padding-top: 96px; }
   .tilt .iphone { --w: calc((var(--m-room) - var(--s-600)) * 0.4826); }
   .wl-photo { width: calc((var(--m-room) - var(--s-700)) * 0.75); }
 }
+/* landscape: the review heading sits in the text column, the phone gets the full height beside it */
+@media (max-width: 720px) and (orientation: landscape), (pointer: coarse) and (max-height: 540px) and (orientation: landscape) {
+  #review-m { position: relative; }
+  #review-m { padding-top: var(--s-500); }
+  #review-m .m-head { position: absolute; z-index: 1; left: max(var(--gutter), env(safe-area-inset-left, 0px)); top: var(--s-500); width: 44%; margin: 0; text-align: left; pointer-events: none; }
+  #review-m .m-head .title { font-size: 24px; line-height: 32px; }
+  #review-m .m-slide .m-txt { align-self: start; padding-top: 80px; }
+}
