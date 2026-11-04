@@ -1,11 +1,12 @@
 # Wipe: release checklist
 
-Stan na 17.10.2026. Strona gotowa (bashubb.com/wipe/), privacy i support w nowym stylu, karta podglądu linku zrobiona.
+Stan na 4.11.2026. Strona przebudowana pod aplikację w stylu Ink & Marker (motyw, zrzuty, film, karta podglądu, ikony, treść, privacy i support); audyty `fit-audit` i `phone-audit` przechodzą.
 
 ## Do potwierdzenia z aplikacją
-- [ ] Cennik na stronie: 3 darmowe czyszczenia, potem jednorazowy zakup **Wipe Pro**, bez subskrypcji. Zgadza się z wersją wysyłaną do review?
+- [ ] Cennik na stronie: 3 darmowe czyszczenia po maks. 5 elementów, potem jednorazowy zakup **Wipe Pro** (bez limitów i z czyszczeniem z Share Sheet), bez subskrypcji. Zgadza się z wersją wysyłaną do review?
+- [ ] Share Sheet: limit 20 elementów, Live Photo i filmy wymagające nowej kopii idą do aplikacji (7 dni); strona tak mówi. Sprawdzić na telefonie, że Wipe pokazuje się w Share Sheet także przy Live Photo (reguła aktywacji bez plików ogólnych).
 - [ ] JSON-LD ma dziś `"price": "0"`: ustawić prawdziwą wartość albo usunąć `offers`.
-- [ ] Privacy „Last updated: October 6, 2026”: czy treść (RevenueCat, Share Extension, brak uploadu) dalej odpowiada aplikacji.
+- [ ] Privacy „Last updated: November 4, 2026”: dopisane Share Sheet (folder roboczy kasowany po zamknięciu, wybór czeka do 7 dni) i „Show on map” (Apple Maps po tapnięciu); sprawdzić z etykietą prywatności w App Store Connect.
 - [ ] FAQ i support: obsługiwane iOS (strona mówi „iOS 18 or later”), Live Photos, gdzie lądują kopie.
 - [ ] W `index.html` (linia ~11) jest gotowy komentarz z `apple-itunes-app`: odkomentować i wpisać id.
 

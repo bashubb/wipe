@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wipe: Remove Location and Metadata from iPhone Photos</title>
-<meta name="description" content="See what your iPhone photos, videos and Live Photos reveal, from exact location to your phone model, and share clean copies. Everything happens on your iPhone. First 3 cleans free.">
+<meta name="description" content="See what your iPhone photos, videos and Live Photos reveal, from exact location to your phone model, and share clean copies. Pick them in Wipe or send them from Photos. Everything happens on your iPhone. First 3 cleans free.">
 <link rel="canonical" href="https://bashubb.com/wipe/">
-<meta name="theme-color" content="#f7f6f2">
+<meta name="theme-color" content="#f3f1ec">
 <meta name="color-scheme" content="light">
 <!-- At release: <meta name="apple-itunes-app" content="app-id=APP_ID"> -->
 <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
 <link rel="apple-touch-icon" href="assets/fav/apple-touch-icon.png">
 <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/landing.css?v=56">
-<link rel="stylesheet" href="assets/wipe.css?v=53">
+<link rel="stylesheet" href="assets/wipe.css?v=60">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,9 +48,10 @@
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Does Wipe upload my photos?", "acceptedAnswer": {"@type": "Answer", "text": "No. Wipe reads and cleans your photos and videos on your iPhone. Nothing is uploaded, there is no account and there are no ads."}},
-    {"@type": "Question", "name": "Will my photos lose quality?", "acceptedAnswer": {"@type": "Answer", "text": "JPEG and HEIC photos stay pixel identical and most videos keep their original video and audio streams. If a file cannot be copied as it is, Wipe asks before creating a new encoded version."}},
+    {"@type": "Question", "name": "Will my photos lose quality?", "acceptedAnswer": {"@type": "Answer", "text": "JPEG and HEIC photos are copied without re-compression, so their pixels stay identical, and most videos keep their original video and audio streams. When a video needs a new compressed copy, Wipe asks before it makes one."}},
     {"@type": "Question", "name": "Are my original photos changed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Wipe creates clean copies. Your originals stay exactly as they were."}},
-    {"@type": "Question", "name": "How much does Wipe cost?", "acceptedAnswer": {"@type": "Answer", "text": "Your first three cleans are free. After that, one purchase unlocks Wipe for good. There is no subscription."}}
+    {"@type": "Question", "name": "How much does Wipe cost?", "acceptedAnswer": {"@type": "Answer", "text": "Your first three cleans are free, up to five items each. After that, one purchase unlocks Wipe for good, including cleaning straight from the Share Sheet. There is no subscription."}},
+    {"@type": "Question", "name": "Can I clean photos from the Share Sheet?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with Wipe Pro. Select photos in Photos, tap Share and choose Wipe. It opens the same Quick Clean as the app, for up to 20 items at a time. Live Photos, videos that need a new compressed copy and bigger selections continue in the app, and the sheet explains why."}}
   ]
 }
 </script>
@@ -94,7 +95,7 @@
     <div class="hero-copy wrap">
       <span class="eyebrow">Photo metadata cleaner for iPhone</span>
       <h1 class="hero-title" id="hero-title">Share your photos.<br>Keep your location.</h1>
-      <p class="lead">Clean a whole batch in seconds, or open every photo, video and Live Photo and see what it really reveals before you decide. All on your iPhone. Your originals never change.</p>
+      <p class="lead">Pick photos, videos and Live Photos, see what they really reveal, and clean the whole batch in seconds, from Wipe or straight from Photos. Open every item if you want to decide field by field. All on your iPhone. Your originals never change.</p>
       <div class="cta-row">
         <a class="store-badge when-live" href="https://apps.apple.com/us/search?term=Wipe%20Photo%20Metadata%20Cleaner" data-store-link><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="156" height="52"></a>
         <span class="btn when-soon" aria-disabled="true">Coming soon to the App Store</span>
@@ -198,24 +199,26 @@
   <div class="wrap">
     <div class="center reveal">
       <span class="eyebrow">Two ways to clean</span>
-      <h2 class="title" id="modes-title">From Photos in five seconds.<br>Or in Wipe, one photo at a time.</h2>
-          </div>
+      <h2 class="title" id="modes-title">Clean the batch in seconds.<br>Or open every photo.</h2>
+    </div>
     <div class="ways">
       <article class="way quick reveal">
         <div class="way-head">
           <span class="way-ic"><svg aria-hidden="true"><use href="#i-lightning"/></svg></span>
-          <div><h3>Quick clean</h3><span class="way-time">In Photos · about 5 seconds</span></div>
+          <div><h3>Quick clean</h3><span class="way-time">In Wipe or in Photos · about 5 seconds</span></div>
         </div>
-        <p class="way-best">Select photos, tap Share, then Wipe. One preset cleans the whole batch. Best for sending a few photos right now.</p>
+        <p class="way-best">Choose photos in Wipe, or tap Share in Photos and pick Wipe. One preset cleans the whole batch, and you see what goes before you tap Clean.</p>
         <a class="way-link" href="#quick">How Quick clean works<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <div class="way-peek" aria-hidden="true"><img src="assets/media/iphone-quickclean.webp" alt="" width="840" height="1741" loading="lazy"></div>
       </article>
       <article class="way review reveal d1">
         <div class="way-head">
           <span class="way-ic"><svg aria-hidden="true"><use href="#i-magnifying-glass-plus"/></svg></span>
           <div><h3>Full review</h3><span class="way-time">In Wipe · as long as you want</span></div>
         </div>
-        <p class="way-best">See every field, choose what goes photo by photo, get a verified report. Best for listings and documents.</p>
+        <p class="way-best">Tap Customize each item: see every field, pick a preset photo by photo, open the report. Best for listings and documents.</p>
         <a class="way-link" href="#review">How Full review works<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <div class="way-peek" aria-hidden="true"><img src="assets/media/iphone-customize.webp" alt="" width="840" height="1741" loading="lazy"></div>
       </article>
     </div>
   </div>
@@ -226,16 +229,39 @@
     <div class="reveal">
       <span class="eyebrow">Quick clean</span>
       <h2 class="title" id="quick-title">Clean without leaving Photos.</h2>
-      <p class="lead">Wipe sits in the Share Sheet next to Messages and AirDrop. It uses one preset for the whole batch, Safe to Share unless you pick another.</p>
+      <p class="lead">Wipe sits in the Share Sheet next to Messages and AirDrop and opens the same Quick Clean as the app: one preset for the whole batch, every photo shown as it is cleaned, then your clean copies. Cleaning from the Share Sheet is part of Wipe Pro.</p>
       <ol class="howto">
-        <li><span>1</span>Select photos, videos and Live Photos in Photos</li>
+        <li><span>1</span>Select photos and videos in Photos</li>
         <li><span>2</span>Tap Share, then Wipe, then Clean</li>
-        <li><span>3</span>Clean copies land in your Wipe album, or go to Files or a chat</li>
+        <li><span>3</span>Share the clean copies, or save them to Photos or Files</li>
       </ol>
+      <p class="note">Up to 20 items at a time. Live Photos and videos that need a new compressed copy <a href="#handoff">continue in Wipe</a>.</p>
       <a class="cross" href="#review"><span>Need to see what’s inside first?</span><b>Full review<svg aria-hidden="true"><use href="#i-arrow-right"/></svg></b></a>
     </div>
     <div class="tilt reveal d1">
-      <div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeShareSheet.webp" alt="The iOS Share Sheet in Photos with Wipe listed next to other apps" width="840" height="1741" loading="lazy"></div>
+      <div class="duo">
+        <div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-sharesheet.webp" alt="The iOS Share Sheet in Photos with Wipe listed next to other apps" width="840" height="1741" loading="lazy"></div>
+        <div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-share-quick.webp" alt="Wipe’s Quick Clean inside the Share Sheet: five items ready, the Wipe Everything preset, a Clean 5 items button" width="840" height="1741" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="handoff" aria-labelledby="handoff-title">
+  <div class="wrap split">
+    <div class="tilt reveal">
+      <div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-handoff.webp" alt="The Share Sheet saying Live Photos are cleaned in Wipe, with the four saved items and three steps to continue" width="840" height="1741" loading="lazy"></div>
+    </div>
+    <div class="reveal d1">
+      <span class="eyebrow">Big batches and Live Photos</span>
+      <h2 class="title" id="handoff-title">Some things belong in the app.<br>Wipe tells you why.</h2>
+      <p class="lead">Live Photos, videos that need a new compressed copy and selections of more than 20 items continue in Wipe. The Share Sheet shows what was saved, why it moved over and what happens next.</p>
+      <ol class="howto">
+        <li><span>1</span>Wipe saves your selection securely</li>
+        <li><span>2</span>Open Wipe from your Home Screen</li>
+        <li><span>3</span>Quick Clean opens with those items</li>
+      </ol>
+      <p class="note">Waiting items are deleted after 7 days if you don’t open Wipe.</p>
     </div>
   </div>
 </section>
@@ -247,9 +273,9 @@
       <h2 class="title" id="fan-title">See everything. Then decide.</h2>
     </div>
     <div class="fan-stage">
-      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReviewPreview.webp" alt="Customize screen with six selected photos and videos and a preset for each" width="840" height="1741" loading="lazy"></div><figcaption><b>1 · Open the batch</b><span>Photos, videos and Live Photos together</span></figcaption></figure>
-      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeQuickCleanPreview.webp" alt="Quick Clean screen: six items ready, Wipe Everything preset selected" width="840" height="1741" loading="lazy"></div><figcaption><b>2 · Read every field</b><span>And pick what goes, photo by photo</span></figcaption></figure>
-      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReadyPreview.webp" alt="Ready to share screen: six clean copies, location, time, device and author removed, quality preserved" width="840" height="1741" loading="lazy"></div><figcaption><b>3 · Get the report</b><span>Every copy verified before you share</span></figcaption></figure>
+      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-customize.webp" alt="Customize: the first of six photos with its own preset and every field Wipe found" width="840" height="1741" loading="lazy"></div><figcaption><b>1 · Open the batch</b><span>Photos, videos and Live Photos together</span></figcaption></figure>
+      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-details.webp" alt="A photo’s location: exact coordinates, with a Show on map button" width="840" height="1741" loading="lazy"></div><figcaption><b>2 · Read every field</b><span>And pick what goes, photo by photo</span></figcaption></figure>
+      <figure class="fan-item obj"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-ready.webp" alt="Ready: six clean copies, with every removed field struck through" width="840" height="1741" loading="lazy"></div><figcaption><b>3 · Get the report</b><span>Every copy verified before you share</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -262,15 +288,15 @@
   <div class="m-car" data-carousel="4500">
     <div class="m-track">
       <figure class="m-slide">
-        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReviewPreview.webp" alt="Customize screen with six selected photos and videos and a preset for each" width="840" height="1741" loading="lazy"></div></div>
+        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-customize.webp" alt="Customize: the first of six photos with its own preset and every field Wipe found" width="840" height="1741" loading="lazy"></div></div>
         <figcaption class="m-txt"><h3>1 · Open the batch</h3><p class="lead">Photos, videos and Live Photos together</p></figcaption>
       </figure>
       <figure class="m-slide">
-        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeQuickCleanPreview.webp" alt="Quick Clean screen: six items ready, Wipe Everything preset selected" width="840" height="1741" loading="lazy"></div></div>
+        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-details.webp" alt="A photo’s location: exact coordinates, with a Show on map button" width="840" height="1741" loading="lazy"></div></div>
         <figcaption class="m-txt"><h3>2 · Read every field</h3><p class="lead">And pick what goes, photo by photo</p></figcaption>
       </figure>
       <figure class="m-slide">
-        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-wipeReadyPreview.webp" alt="Ready to share screen: six clean copies, location, time, device and author removed, quality preserved" width="840" height="1741" loading="lazy"></div></div>
+        <div class="m-vis"><div class="iphone" data-finish="pro-max-silver"><img class="front" src="assets/media/iphone-ready.webp" alt="Ready: six clean copies, with every removed field struck through" width="840" height="1741" loading="lazy"></div></div>
         <figcaption class="m-txt"><h3>3 · Get the report</h3><p class="lead">Every copy verified before you share</p></figcaption>
       </figure>
     </div>
@@ -283,11 +309,11 @@
     <div class="center reveal">
       <span class="eyebrow">Three presets</span>
       <h2 class="title" id="presets-title">Choose what goes.<br>Keep what helps.</h2>
-      <p class="lead">Start with the recommended preset, or tune it for a single photo when you need to. You see exactly what changes before you clean.</p>
+      <p class="lead">Start with Wipe Everything, the default, or change the default in Settings and tune it for a single photo when you need to. You see exactly what changes before you clean.</p>
     </div>
     <div class="grid-3 presets">
       <article class="card preset reveal">
-        <span class="badge">Recommended</span>
+        <span class="badge quiet">Balanced</span>
         <h3>Safe to Share</h3>
         <p>Everything that identifies you or where you were.</p>
         <ul>
@@ -307,7 +333,7 @@
         </ul>
       </article>
       <article class="card preset reveal d2">
-        <span class="badge quiet">Strictest</span>
+        <span class="badge">Default · strictest</span>
         <h3>Wipe Everything</h3>
         <p>The cleanest possible copy.</p>
         <ul>
@@ -350,7 +376,8 @@
         <div class="price">3 <small>cleans</small></div>
         <ul>
           <li><svg><use href="#i-check"/></svg>Every preset and file type</li>
-          <li><svg><use href="#i-check"/></svg>Share Sheet and full review</li>
+          <li><svg><use href="#i-check"/></svg>Up to 5 photos or videos per clean</li>
+          <li><svg><use href="#i-check"/></svg>Quick clean and full review</li>
           <li><svg><use href="#i-check"/></svg>A clean only counts when it succeeds</li>
         </ul>
       </article>
@@ -359,8 +386,9 @@
         <div class="price"><svg class="icon" style="width:48px;height:48px" aria-hidden="true"><use href="#i-infinity"/></svg><span class="sr">Unlimited</span></div>
         <ul>
           <li><svg><use href="#i-check"/></svg>Unlimited cleaning, forever</li>
-          <li><svg><use href="#i-check"/></svg>One purchase, no subscription</li>
-          <li><svg><use href="#i-check"/></svg>Restore anytime from Settings</li>
+          <li><svg><use href="#i-check"/></svg>Bigger batches, no limit per clean</li>
+          <li><svg><use href="#i-check"/></svg>Clean straight from the Share Sheet in Photos</li>
+          <li><svg><use href="#i-check"/></svg>One purchase, no subscription, restore anytime</li>
         </ul>
       </article>
     </div>
@@ -375,12 +403,14 @@
     </div>
     <div class="faq">
       <details><summary>Does Wipe upload my photos?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>No. Wipe reads and cleans your photos and videos on your iPhone. Nothing is uploaded, there is no account and there are no ads.</div></details>
-      <details><summary>Will my photos lose quality?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>JPEG and HEIC photos stay pixel identical and most videos keep their original video and audio streams. If a file can’t be copied as it is, Wipe tells you and asks before creating a new encoded version.</div></details>
+      <details><summary>Will my photos lose quality?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>JPEG and HEIC photos are copied without re-compression, so their pixels stay identical, and most videos keep their original video and audio streams. When a video needs a new compressed copy, Wipe asks before it makes one. A file Wipe can’t clean safely is left alone, and the app tells you so.</div></details>
       <details><summary>Are my original photos changed?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>No. Wipe creates clean copies. Your originals stay exactly as they were in your library.</div></details>
-      <details><summary>Where do the clean copies go?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Save them to Photos, where they land in a dedicated Wipe album, save them to Files, or share them straight from Wipe.</div></details>
-      <details><summary>Does it work with videos and Live Photos?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Yes. You can clean photos, videos and Live Photos together in one batch, and Live Photos stay Live Photos.</div></details>
-      <details><summary>What does Safe to Share keep?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Camera settings such as exposure, aperture and ISO. It removes location, capture time, device, author, captions and anything else that could identify you or where you were.</div></details>
-      <details><summary>How much does Wipe cost?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Your first three cleans are free. After that, one purchase unlocks Wipe for good. There is no subscription, and you can restore your purchase from Settings.</div></details>
+      <details><summary>Can I clean photos from the Share Sheet?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Yes, with Wipe Pro. Select photos in Photos, tap Share and choose Wipe (if it isn’t listed, scroll the app row, tap More and enable it). It opens the same Quick Clean as the app, for up to 20 items at a time. Live Photos, videos that need a new compressed copy and bigger selections continue in the app, and the sheet explains why. Without Pro the sheet says so and nothing is saved.</div></details>
+      <details><summary>Where do the clean copies go?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Save them to Photos, where they land in a dedicated Wipe album, save them to Files, or share them straight from Wipe or from the Share Sheet.</div></details>
+      <details><summary>Does it work with videos and Live Photos?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Yes. You can clean photos, videos and Live Photos together in one batch in the app, and Live Photos stay Live Photos. From the Share Sheet, Live Photos continue in the app.</div></details>
+      <details><summary>What happens to photos waiting in Wipe?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>A selection the Share Sheet handed over stays on your iPhone, opens in Quick Clean when you open Wipe, and is deleted after 7 days if you don’t. The working copies the Share Sheet makes are deleted when you close it.</div></details>
+      <details><summary>Which preset is the default?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Wipe Everything. Change it in Settings under Default preset, or tap Change in Quick Clean. Safe to Share keeps camera settings such as exposure, aperture and ISO and removes location, capture time, device, author and captions. Location Only removes just the location.</div></details>
+      <details><summary>How much does Wipe cost?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Your first three cleans are free, up to five items each. After that, one purchase unlocks Wipe for good, including cleaning straight from the Share Sheet. There is no subscription, and you can restore your purchase from Settings.</div></details>
       <details><summary>Which iPhones does Wipe support?<svg aria-hidden="true"><use href="#i-plus"/></svg></summary><div>Any iPhone running iOS 18 or later.</div></details>
     </div>
     <p class="center small" style="margin-top:var(--s-400)">Something else? <a href="support/">Visit support</a></p>
